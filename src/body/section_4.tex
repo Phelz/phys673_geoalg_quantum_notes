@@ -1,0 +1,91 @@
+
+\section{An Algebra within an Algebra}
+
+\subsection{Spacetime Geometric Algebra}
+In the last section, I introduced the idea of duality, and said that it is not always the case that the basis vector and their duals are identical--a somewhat redundant result. To illustrate that this is not always the case, let us consider a slightly more sophisticated algebra, the Spacetime Geometric Algebra (SGA), which inherits the 4D Minkowski metric from special relativity. I assume the reader is already familiar with that tensor. I will be using the mostly negative version, the one with the signature: $(+, -, -, -)$.
+\\ \\ 
+The orthonormal basis of SGA consists of one timelike vector $\gamma_0$ and three spacelike vectors $\gamma_1$, $\gamma_2$, and $\gamma_3$. Like with normal Euclidean space, the basis vectors follow two important rules. The first identifies orthogonality:
+\begin{equation}
+   \large\boxed{ \vec{\gamma_\alpha} \vec{\gamma_\beta} = -\vec{\gamma_\beta}\vec{\gamma_\alpha}},
+\end{equation}
+while the second, and most important, dictates the operation of the inner product via:
+\begin{equation} \label{eq:metric_dot_product}
+    \large\boxed{\vec{\gamma_\alpha}\vec{\gamma_\alpha} = \vec{\gamma_\alpha} \cdot \vec{\gamma_\alpha} = \large{ \eta_{\alpha\alpha}}},
+\end{equation} 
+since the outer product $\vec{\gamma_\alpha} \wedge \vec{\gamma_\alpha}$ vanishes. I cannot overstress how fundamental equation \eqref{eq:metric_dot_product} is. The metric defines the structure of the geometry. By defining the norm, it also implicitly defines the rules of dual transformations--the reason as to why, I shall leave to the reader. As for how, consider the spacelike basis vector resembling $\hat{y}$, namely $\vec{\gamma_2}$, and its norm: \footnote{By norm, I refer to the inner product; length would be the square root of that.}
+\begin{equation} \label{eq:dot_product_gamma_2}
+\vec{\gamma_2} \cdot \vec{\gamma_2} = \eta_{22} = -1.
+\end{equation}
+Because of equation \eqref{eq:duality_definition}, which defines duality, and equation \eqref{eq:dot_product_gamma_2} above, we must have that:
+$$    \vec{\gamma_2} \cdot \vec{\gamma^2} = 1 \Longrightarrow \vec{\gamma_2} \cdot (-\vec{\gamma_2} )= - \vec{\gamma_2} \cdot \vec{\gamma_2} =  -(-1) = 1, $$
+meaning,
+\begin{equation}
+    \large\boxed{\vec{\gamma_i} = - \vec{\gamma^i}}. 
+\end{equation}
+But that only holds for $i \in \{ 1, 2,3\}$. For the timelike vector, 
+\begin{equation}
+    \large\boxed{\vec{\gamma_0} =  \vec{\gamma^0}}.  
+\end{equation}
+It is a good exercise to see why the latter must be true using a similar argument to the one described above. Conversely, if our metric was of the mostly plus signature, $(-, +, +, +)$, we would have:
+\begin{align*}
+    \vec{\gamma^0} = - \vec{\gamma_0 } && \vec{\gamma^i} = \vec{ \gamma_i}.
+\end{align*}
+Therefore, the inner product, defined by the metric tensor, sets the rules of the algebra. As we say in the language of tensors: "the metric tensor is used to raise or lower indices.":
+\begin{align*}
+\vec{\gamma_\alpha} = \vec{\gamma^\beta } \ \eta_{\alpha \beta} && 
+\vec{\gamma^\alpha} = \vec{\gamma_\beta } \ \eta^{\alpha \beta} 
+\end{align*}
+
+
+\subsection{The Even Subalgebra}
+The last section should have been indicative of the complexity of SGA, given its metric. Another aspect of this intricacy arises when we consider the amount of grade-2 elements we can generate using our basis set $\{ \vec{\gamma_0}, \vec{\gamma_2}, \vec{\gamma_1}, \vec{\gamma_3} \}$. Considering that scalars form via the products $\vec{\gamma_0} \vec{\gamma_0} = 1$ and $\vec{\gamma_i}\vec{\gamma_i}= -1 $, the only generators for bivectors are 
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccc}
+$\{\vec{\gamma_i}\vec{\gamma_0}\}$ & and & $\{\vec{\gamma_i} \vec{\gamma_j}\},$ 
+\end{tabular}
+\end{table}
+each of which generates 3 independent bivectors (given their anti-commutativity), for a total of 6 bivectors in our spacetime geom{etric algebra. I would like to focus on the bivector algebra formed by the set $ \{ \vec{\sigma_i} \} \equiv \{\vec{\gamma_i}\vec{\gamma_0}\}$, from which you can generate scalars via
+\begin{equation} \label{eq:pauli_unitary}
+    (\vec{\sigma_i})^2 = \vec{\sigma_i} \vec{\sigma_i}  =  \vec{\gamma_i} \vec{\gamma_0} \vec{\gamma_i} \vec{\gamma_0} = - \vec{\gamma_i} \vec{\gamma_i}  \color{teal} \vec{\gamma_0} \vec{\gamma_0} \color{black} = 1,
+\end{equation}
+and the pseudoscalar via,
+\begin{align*}
+    \mathbb{I} &=  \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3} \\
+    &= \vec{\gamma_1} \vec{\gamma_0} \vec{\gamma_2} \vec{\gamma_0} \vec{\gamma_3} \vec{\gamma_0} \\
+    &=-\vec{\gamma_0} \vec{\gamma_1} \vec{\gamma_2} \vec{\gamma_0} \vec{\gamma_3} \vec{\gamma_0} \\
+    &= \vec{\gamma_0} \vec{\gamma_1} \vec{\gamma_2} \vec{\gamma_3} \color{teal}\vec{\gamma_0} \vec{\gamma_0},
+\end{align*}
+\begin{equation}
+    \large \boxed{ \mathbb{I} =  \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3}=\vec{\gamma_0} \vec{\gamma_1} \vec{\gamma_2} \vec{\gamma_3}   }.
+\end{equation}
+This means that the subalgebra and SGA share the same pseudoscalar.
+\\ \\ 
+Borrowing on from equation \eqref{eq:levicivita_ga_def}, within this subalgebra, the Levi-Civita symbol is defined in terms of subalgebra's pseudoscalar as
+\begin{align*}
+    \epsilon_{ijk} &=  \vec{\sigma_i} \wedge \vec{\sigma_j} \wedge \vec{\sigma_k} \mathbb{I}^\dagger \\
+                    &= \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} \vec{\sigma_3} \vec{\sigma_2} \vec{\sigma_1} \\
+    \epsilon_{ijk} \mathbb{I} &= \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} \vec{\sigma_3}\vec{\sigma_2} \color{teal} \vec{\sigma_1} \vec{\sigma_1} \color{black} \vec{\sigma_2} \vec{\sigma_3} \\
+    \epsilon_{ijk} \mathbb{I} &= \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} \\
+    \epsilon_{ijk} \mathbb{I} \vec{\sigma_k} &= \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k}  \vec{\sigma_k} 
+\end{align*}
+\begin{equation} \label{eq:pauli_product}
+    \large \boxed{ \vec{\sigma_i} \vec{\sigma_j} = \epsilon_{ijk} \mathbb{I} \vec{\sigma_k}  }
+\end{equation}
+This is no trivial result. Because the Levi-Civita is totally anti-symmetric, equation \eqref{eq:pauli_product} implies
+\begin{equation}
+    \large \boxed{\vec{\sigma_i} \vec{\sigma_j} = - \vec{\sigma_j} \vec{\sigma_i}},
+\end{equation}
+which implies
+\begin{equation} \label{eq:pauli_commutator}
+    \vec{\sigma_i} \vec{\sigma_j} = \frac{1}{2} \left(  \vec{\sigma_i} \vec{\sigma_j} - \vec{\sigma_j} \vec{\sigma_i}  \right) = \frac{1}{2} \left[ \vec{\sigma_j}, \vec{\sigma_j} \right].
+\end{equation}
+Finally, combining equations \eqref{eq:pauli_product} with \eqref{eq:pauli_commutator}, we arrive at the commutator relationship governing the famous Pauli matrices:
+\begin{equation}
+    \large \boxed{ \left[ \vec{\sigma_j}, \vec{\sigma_j} \right] = 2 \epsilon_{ijk} \mathbb{I} \vec{\sigma_k}  }.
+\end{equation}
+Since the product of any of the $\vec{\sigma_i} \vec{\sigma_j} $ reduces to $1$ if $i=j$ (see equation \eqref{eq:pauli_unitary}) and results in the third orthogonal bivector otherwise (see equation \eqref{eq:outer_product}), the algebra is summarized by
+\begin{equation}
+    \large \boxed{ \vec{\sigma_i} \vec{\sigma_j} = \delta_{ij} +  \epsilon_{ijk} \mathbb{I} \vec{\sigma_k}  }.
+\end{equation}
+Looks familiar?... Indeed, this is the algebra Pauli introduced to describe quantum spin! However, I would like us to pause here and ponder a little, since, up to this point, I had made no mention of quantum mechanics, nor did I introduce any physics, observables, measurements, etc. We arrived here purely via the geometric algebra of spacetime. Does this mean quantum spin is inextricably linked to geometry? While, I cannot fully answer this question, nor did I find anyone to claim they can in the literature, I can certainly start to pierce the veil--show you a glimpse of the geometry of quantum spin. 

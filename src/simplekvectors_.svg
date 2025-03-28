@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="71.634621mm"
+   height="22.50786mm"
+   viewBox="0 0 71.634621 22.50786"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="simplekvectors.svg"
+   inkscape:export-filename="simplekvectors_.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="11.313709"
+     inkscape:cx="229.76551"
+     inkscape:cy="115.12582"
+     inkscape:window-width="5117"
+     inkscape:window-height="2071"
+     inkscape:window-x="3192"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135"
+         transform="scale(0.5)" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.277852,-17.38874)">
+    <g
+       id="g43"
+       transform="translate(0,-2.8956195)">
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-dasharray:none"
+         id="path1"
+         cx="28.753483"
+         cy="32.40485"
+         r="0.49591297" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="28.767952"
+         y="39.22448"
+         id="text33"><tspan
+           sodipodi:role="line"
+           id="tspan33"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="28.767952"
+           y="39.22448">Scalar</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="28.767952"
+           y="42.752254"
+           id="tspan34">Grade 0</tspan></text>
+    </g>
+    <g
+       id="g42"
+       transform="translate(-1.2035453,-2.8088045)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+         d="M 43.2738,32.906114 52.947565,23.4292"
+         id="path2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="48.451416"
+         y="39.137665"
+         id="text35"><tspan
+           sodipodi:role="line"
+           id="tspan35"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="48.451416"
+           y="39.137665">Vector</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="48.451416"
+           y="42.66544"
+           id="tspan36">Grade 1</tspan></text>
+    </g>
+    <g
+       id="g41"
+       transform="translate(-0.60177392,-2.8956195)">
+      <g
+         id="g33"
+         transform="translate(0.5016981,-13.013337)">
+        <path
+           id="rect6"
+           style="fill:#b3b3b3;stroke:#000000;stroke-width:0.2"
+           d="m 66.872722,37.721546 h 8.192554 l -6.402919,8.192555 h -8.192554 z"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Triangle)"
+           id="path6"
+           sodipodi:type="arc"
+           sodipodi:cx="41.582699"
+           sodipodi:cy="67.831253"
+           sodipodi:rx="2.147563"
+           sodipodi:ry="1.393232"
+           sodipodi:start="1.8760035"
+           sodipodi:end="1.1852254"
+           sodipodi:arc-type="arc"
+           d="m 40.937376,69.160096 a 2.147563,1.393232 0 0 1 -1.483413,-1.512924 2.147563,1.393232 0 0 1 2.042466,-1.208026 2.147563,1.393232 0 0 1 2.185356,1.097756 2.147563,1.393232 0 0 1 -1.291413,1.585297"
+           sodipodi:open="true"
+           transform="rotate(-27)" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="68.130745"
+         y="39.22448"
+         id="text37"><tspan
+           sodipodi:role="line"
+           id="tspan37"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="68.130745"
+           y="39.22448">Bivector</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="68.130745"
+           y="42.752254"
+           id="tspan38">Grade 2</tspan></text>
+    </g>
+    <g
+       id="g40"
+       transform="translate(0,-2.8956195)">
+      <g
+         id="g32"
+         transform="translate(6.6937519e-7,-13.683309)">
+        <path
+           id="path27"
+           style="fill:#b3b3b3;stroke:#000000;stroke-width:0.2"
+           inkscape:transform-center-x="1.118812e-06"
+           d="m 94.212067,43.447236 -5.406365,3.121366 -5.406364,-3.121366 v -6.242732 l 5.406364,-3.121366 5.406365,3.121366 z"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 88.805701,46.568601 c 0,-6.600661 0,-6.620547 0,-6.620547 l 5.406364,-2.743549"
+           id="path28" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="M 88.805699,39.948054 83.399338,37.204505"
+           id="path29" />
+        <path
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Triangle)"
+           id="path30"
+           sodipodi:type="arc"
+           sodipodi:cx="100.65215"
+           sodipodi:cy="-0.78345603"
+           sodipodi:rx="1.3621107"
+           sodipodi:ry="2.1793225"
+           sodipodi:start="0.77030603"
+           sodipodi:end="0.20381686"
+           sodipodi:open="true"
+           sodipodi:arc-type="arc"
+           d="m 101.62974,0.73412588 a 1.3621107,2.1793225 0 0 1 -1.778618,0.24505908 1.3621107,2.1793225 0 0 1 -0.402683,-2.78263166 1.3621107,2.1793225 0 0 1 1.664941,-1.0305923 1.3621107,2.1793225 0 0 1 0.87269,2.4916967"
+           transform="rotate(25)" />
+        <path
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Triangle)"
+           id="path30-2"
+           sodipodi:type="arc"
+           sodipodi:cx="-60.100525"
+           sodipodi:cy="74.176743"
+           sodipodi:rx="1.3621107"
+           sodipodi:ry="2.1793225"
+           sodipodi:start="2.0382347"
+           sodipodi:end="1.1779061"
+           sodipodi:open="true"
+           sodipodi:arc-type="arc"
+           d="m -60.714293,76.122279 a 1.3621107,2.1793225 0 0 1 -0.7052,-2.489683 1.3621107,2.1793225 0 0 1 1.369728,-1.633662 1.3621107,2.1793225 0 0 1 1.289875,1.792346 1.3621107,2.1793225 0 0 1 -0.819137,2.398735"
+           transform="matrix(-0.90630779,0.42261826,0.42261826,0.90630779,0,0)" />
+        <path
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Triangle)"
+           id="path31"
+           sodipodi:type="arc"
+           sodipodi:cx="88.86525"
+           sodipodi:cy="36.930721"
+           sodipodi:rx="2.2274616"
+           sodipodi:ry="1.3257731"
+           sodipodi:start="2.0382347"
+           sodipodi:end="1.1779061"
+           sodipodi:open="true"
+           sodipodi:arc-type="arc"
+           d="m 87.861553,38.114273 a 2.2274616,1.3257731 0 0 1 -1.153214,-1.514579 2.2274616,1.3257731 0 0 1 2.239918,-0.993825 2.2274616,1.3257731 0 0 1 2.109335,1.090359 2.2274616,1.3257731 0 0 1 -1.339536,1.459251" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="88.809837"
+         y="39.22448"
+         id="text39"><tspan
+           sodipodi:role="line"
+           id="tspan39"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="88.809837"
+           y="39.22448">Trivector</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:2.82222px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="88.809837"
+           y="42.752254"
+           id="tspan40">Grade 3</tspan></text>
+    </g>
+  </g>
+</svg>

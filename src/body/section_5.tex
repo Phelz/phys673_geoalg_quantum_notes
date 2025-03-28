@@ -1,0 +1,106 @@
+
+
+\section{Geometry of Spin}
+
+\subsection{Rotations}
+In the last section, I discussed the Pauli algebra, and how it arises from the bivector algebra within SGA. I would like to expand on this here, by first making a correspondence with a familiar operator. Consider
+\begin{equation} \label{eq:euler_quantum}
+	\large  \exp{i \hat{\sigma_z} \theta / 2} = \cos(\theta/2) + i \hat{\sigma_z} \sin(\theta/2),
+\end{equation}
+where $\hat{\sigma_z} $ is the quantum operator (sigma matrix) analog to our $\vec{\sigma_3}$. Equation \eqref{eq:euler_quantum} is relatively known in quantum mechanics, and can be verified by expanding the exponential function. The proof is simple and can be found in many textbooks. I would like to make the argument that the GA analog also holds, namely
+\begin{equation} \label{eq:euler_ga}
+	\large  \exp{ \mathbb{I} \vec{\sigma_z} \theta / 2} = \cos(\theta/2) + \mathbb{I} \vec{\sigma_z} \sin(\theta/2).
+\end{equation}
+Instead of going through the math, I would like to remind the reader of the fundamental result we stumbled upon while deriving the dual in equation \eqref{eq:dual_3d_test_1}:
+\begin{equation} \label{eq:imaginary_pseudoscalar}
+	\mathbb{I}  \mathbb{I} = \mathbb{I} ^2 = -1,
+\end{equation}
+which I swept under rug right momentarily. This result alludes to a hidden complex structure embedded within GA. Equation \eqref{eq:imaginary_pseudoscalar} holds not only for the pseudoscalar of 3D space which was used in deriving equation \eqref{eq:dual_3d_test_1}, but also for the 4D Minkowski space (as one quickly check), and, by extension, for the even subalgebra. This result is precisely why GA
+\\ \\
+Additionally, I have shown in the previous section that the Pauli vectors are unitary (see equation \eqref{eq:pauli_unitary}). Hence, we have all the ingredients necessary to assert that if equation \eqref{eq:euler_quantum} holds equation \eqref{eq:euler_ga} must also hold.
+\\ \\
+Finally, using equation \eqref{eq:pauli_product}, I would like to rewrite  $\mathbb{I} \vec{\sigma_3}$.
+$$ \vec{\sigma_i} \vec{\sigma_j} = \epsilon_{ijk} \mathbb{I} \vec{\sigma_k} = \epsilon_{ij3} \mathbb{I} \vec{\sigma_3},$$
+which implies,
+$$ \mathbb{I} \vec{\sigma_3 } = \vec{\sigma_1 } \vec{\sigma_2 }. $$
+Rewriting equation \eqref{eq:euler_ga}, we have
+\begin{equation} \label{eq:euler_ga_rewritten}
+	\large  \exp{ \mathbb{I} \vec{\sigma_z} \theta / 2} = \cos(\theta/2) + \vec{\sigma_1} \vec{\sigma_2} \sin(\theta/2).
+\end{equation}
+Here, I would like to examine the sandwich product
+\begin{equation} \label{eq:sandwich_product}
+	\large  \exp{ -\mathbb{I} \vec{\sigma_z}  \theta / 2} \ \vec{v}  \
+	\exp{ \mathbb{I} \vec{\sigma_z} \theta / 2},
+\end{equation}
+for some vector $\vec{v}$ in our subalgebra. To illustrate, let us use $\vec{v} =  \vec{\sigma_1}$:
+% \begin{align*}
+% 	\exp{ -\mathbb{I} \vec{\sigma_z} \theta / 2} \ \vec{\sigma_1}  \
+% 	\exp{ \mathbb{I} \vec{\sigma_z} \theta / 2} & = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
+% 	                                            & = \left(  \vec{\sigma_1} \cos(\frac{\theta}{2}) + \vec{\sigma_2}  \sin(\frac{\theta}{2}) \right) \left(  \cos(\frac{\theta}{2}) + \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
+% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})  + \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) + \color{teal}\vec{\sigma_1} \vec{\sigma_1} \color{black} \vec{\sigma_2} \cos(\frac{\theta}{2})  \sin(\frac{\theta}{2}) + \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \sin(\frac{\theta}{2}) \\
+% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})+ \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) + \vec{\sigma_2} \cos(\frac{\theta}{2})  \sin(\frac{\theta}{2}) - \color{teal} \vec{\sigma_2} \vec{\sigma_2} \color{black} \vec{\sigma_1} \sin[2](\frac{\theta}{2})   \\
+% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})+ 2 \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) - \vec{\sigma_1} \sin[2](\frac{\theta}{2})
+% \end{align*}
+% \begin{align*}
+% 	\exp{ -\mathbb{I} \vec{\sigma_z} \theta / 2} \ \vec{\sigma_1}  \
+% 	\exp{ \mathbb{I} \vec{\sigma_z} \theta / 2}  = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
+%                                                  =   \cos(\frac{\theta}{2}) \vec{\sigma_1} \cos(\frac{\theta}{2}) 
+%                                                   - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \ \vec{\sigma_1} \cos(\frac{\theta}{2})  \\
+%                                                   &\quad + \cos(\frac{\theta}{2}) \vec{\sigma_1}  \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) 
+%                                                   -  \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \\
+%                                                   % --------------------
+%                                                  =  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
+%                                                   - \vec{\sigma_1} \vec{\sigma_2}  \ \vec{\sigma_1} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})  \\
+%                                                   &\quad + \color{teal} \vec{\sigma_1}  \vec{\sigma_1}  \color{black} \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+%                                                   -  \vec  {\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2}    \sin[2](\frac{\theta}{2}) \\
+%                                                   % --------------------
+%                                                  =  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
+%                                                   + \vec{\sigma_2} \color{teal} \vec{\sigma_1}  \ \vec{\sigma_1} \color{black} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})  \\
+%                                                   &\quad + \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+%                                                   -  (\vec  {\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2})    \sin[2](\frac{\theta}{2}) \\
+% \end{align*}
+
+$$ 	\exp{ -\mathbb{I} \vec{\sigma_z} \theta / 2} \ \vec{\sigma_1}  \
+\exp{ \mathbb{I} \vec{\sigma_z} \theta / 2}  = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) $$
+\begin{align*} 
+                                                 &=   \cos(\frac{\theta}{2}) \vec{\sigma_1} \cos(\frac{\theta}{2}) 
+                                                  - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \ \vec{\sigma_1} \cos(\frac{\theta}{2})
+                                                  + \cos(\frac{\theta}{2}) \vec{\sigma_1}  \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) 
+                                                  -  \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \vec{\sigma_1}  \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \\
+                                                  % --------------------
+                                                 &=  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
+                                                  - \vec{\sigma_1} \vec{\sigma_2}  \ \vec{\sigma_1} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2}) 
+                                                  + \color{teal} \vec{\sigma_1}  \vec{\sigma_1}  \color{black} \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+                                                  -  \vec  {\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_1} \vec{\sigma_2}    \sin[2](\frac{\theta}{2}) \\
+                                                  % --------------------
+                                                 &=  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
+                                                  + \vec{\sigma_2} \color{teal} \vec{\sigma_1}  \ \vec{\sigma_1} \color{black} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+                                                  + \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+                                                  -  \vec  {\sigma_1} \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2}    \sin[2](\frac{\theta}{2}) \\
+                                                  % --------------------
+                                                 &=  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
+                                                 + 2 \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
+                                                 - \vec{\sigma_1}  (\vec  {\sigma_1} \vec{\sigma_2} )^2    \sin[2](\frac{\theta}{2})
+\end{align*}
+or,
+\begin{equation} \label{eq:sigma_x_rotated}
+     \large \exp{ -\mathbb{I} \vec{\sigma_z} \theta / 2} \ \vec{\sigma_1}  \
+     \exp{ \mathbb{I} \vec{\sigma_z} \theta / 2} =  \vec{\sigma_1} \cos(\theta) + \vec{\sigma_2} \sin(\theta),
+\end{equation}
+where, in the last step, I made use of the half-angle trigonometric identities and that $ (\vec{\sigma_1} \vec{\sigma_2} )^2 = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2} = - \vec{\sigma_1} \color{teal} \vec{\sigma_2} \vec{\sigma_2} \color{black} \vec{\sigma_1} = -1 $, again, behaving like the imaginary unit. The latter is no coincidence. In fact, the Pauli algebra is isomorphic to the algebra of quaternions, where 
+\begin{align*}
+    \vec{\sigma_1} \mathbb{I} &\sim i &
+    -\vec{\sigma_2} \mathbb{I} & \sim j &
+    \vec{\sigma_3} \mathbb{I} &\sim k.
+\end{align*}    
+Hence, the quaternion algebra, fundamentally related to spatial rotations, is also a subalgebra of the SGA, and the imaginary unit $i$ is represented by the bivector $\vec{\sigma_1} \vec{\sigma_2}$. Equation \eqref{eq:sigma_x_rotated} describes a rotation of the vector $\vec{\sigma_1}$ about the $\vec{\sigma_3}$ axis by an angle $\theta$. Now we can visualize the rotation as being brought about by the action of the exponential of the bivector $\vec{\sigma_1} \vec{\sigma_2}$, which is a rotation operator in the plane defined by the two vectors $\vec{\sigma_1}$ and $\vec{\sigma_2}$. The sense of rotation would then be opposite if we use the bivector $-\vec{\sigma_1} \vec{\sigma_2}= \vec{\sigma_2} \vec{\sigma_1}$--a purely geometric intuition! 
+\\ \\ 
+One can check that this operation is indeed a rotation. For instance, substituting $\theta = \pi/2$ in equation \eqref{eq:sigma_x_rotated} gives
+$$ \large \exp{ -\mathbb{I} \vec{\sigma_z} \pi / 4} \ \vec{\sigma_1}  \ \exp{ \mathbb{I} \vec{\sigma_z} \pi / 4} =  \vec{\sigma_2}. $$
+Substituting $\theta = \pi/4$ gives
+$$ \large \exp{ -\mathbb{I} \vec{\sigma_z} \pi / 8} \ \vec{\sigma_1}  \ \exp{ \mathbb{I} \vec{\sigma_z} \pi / 8} =  \frac{1}{\sqrt{2}} \left( \vec{\sigma_1} + \vec{\sigma_2} \right). $$
+Indeed, we are moving around the unit circle in the plane defined by $\vec{\sigma_1}$ and $\vec{\sigma_2}$! Thus, using these rotations, we can construct the unit sphere, commonly referred to as the Bloch sphere; see figure ZZZ. In the next section, I shall explore how this sphere relates to the mathematical description of the qubit.
+
+\subsection{The Reimann Sphere}
+
+

@@ -1,0 +1,235 @@
+\documentclass{article}
+\input{packages.tex}
+
+\usepackage{pdfpages}
+\usepackage{svg}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage{hyperref, nameref, xurl} % links/ labels
+\sisetup{multi-part-units=single}
+
+\newcommand{\deriv}[2]{\frac{d#1}{d#2}}
+\newcommand{\pderiv}[1]{\frac{\partial}{\partial#1}}
+\newcommand{\pderivf}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\pderivw}[3]{\left(\frac{\partial #1}{\partial #2}\right)_{#3}}
+\renewcommand{\exp}[1]{e^{#1}}
+\renewcommand{\lambda}{\lambdaup}
+\newcommand{\mean}[1]{\left<#1\right>}
+\newcommand{\func}[2]{#1\left(#2\right)}
+\DeclareMathOperator\arctanh{tanh^{-1}}
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\nvec}[1]{\hat{\mathbf{#1}}}
+\newcommand{\Lagr}{\mathscr{L}}
+\newcommand{\Fdual}{\mathscr{F}}
+
+\newcommand{\cse}{{{T_\Fdual}^\alpha}_\beta}
+
+\newcommand{\LF}{\Lagr_\Fdual}
+
+\newcommand{\metric}{\eta_{\alpha\beta}}
+
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{15pt} \item[-] #1}
+}
+
+%\counterwithin{figure}{section}
+%\counterwithin{table}{section}
+%\counterwithin{equation}{section}
+
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{F. Ghaly}
+\lhead{PHYS 673 Lecture Notes}
+\rfoot{Page \thepage}
+
+
+\begin{document}
+\input{body/section_1}
+\input{body/section_2}
+\input{body/section_3}
+\input{body/section_4}
+\input{body/section_5}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% But notice that the product $\vec{\sigma_i} \vec{\sigma_i} = 1$:
+% $$ \vec{\sigma_i} \vec{\sigma_i} = \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_i}\vec{\gamma_0} = - \vec{\gamma_i}\vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_0}  = - (-1) = 1. $$
+% This property is profound, particularly because we know that the product of these bivectors can only have two elements, a scalar and a bivector:
+% \begin{align}
+%     \label{eq:geomprod-sigmaij}
+%     \vec{\sigma_i} \vec{\sigma_j} &=  \left<\vec{\sigma_i} \vec{\sigma_j}\right>_0 + \left<\vec{\sigma_i} \vec{\sigma_j}\right>_2
+% \end{align}
+% Since the only other choice for a bivector product within this subalgebra is $\vec{\sigma_i} \vec{\sigma_j} = -\vec{\gamma_i}\vec{\gamma_j}$ is a bivector, we know what the grade-0 projection must be the dot product, given by
+% \begin{align}
+%     \boxed{ \left<\vec{\sigma_i} \vec{\sigma_j}\right>_0 \equiv \vec{\sigma_i} \cdot \vec{\sigma_j} = \delta_i^j. }
+% \end{align}
+% Continuing with our derivation for equation \eqref{eq:21}, we get
+% \begin{align*}
+%     \epsilon_{ijk} \mathbf{I} &= \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} \vec{\sigma_3}\vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3} \\
+%     &=  \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} \\
+%     &=  \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j} \vec{\gamma_0} \gamma_k \vec{\gamma_0} \\ 
+%     &=  - \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j}  \gamma_k 
+% \end{align*}
+% However, this subalgebra shares the same pseudoscalar as that of spacetime:
+% \begin{equation}
+%     \mathbf{I} = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3}= \gamma_1 \vec{\gamma_0} \gamma_2 \vec{\gamma_0} \gamma_3 \vec{\gamma_0} = \vec{\gamma_0} \gamma_1 \gamma_2 \gamma_3 = I.
+% \end{equation}
+% Therefore, we end up with equation \eqref{eq:21}: $ \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j} \gamma_k = -  \epsilon_{ijk} I$. One way to rewrite this result is to use $\epsilon_{ijk} I = \vec{\sigma_i} \vec{\sigma_j} \vec{\sigma_k} $ and write
+% \begin{equation}
+%     \label{eq:levicivita-sigmas}
+%      \vec{\sigma_i} \vec{\sigma_j}  = \epsilon_{ijk} I \vec{\sigma_k}.
+% \end{equation}
+% This gives us a way to map the product of two bivectors to a third bivector, hence we obtain the grade-2 element of this subalgebra- the cross product, by
+% \begin{equation}
+%     \boxed{ \left<\vec{\sigma_i} \vec{\sigma_j}\right>_2 \equiv \vec{\sigma_i} \cross \vec{\sigma_j}  = \epsilon_{ijk}  \vec{\sigma_k}}.
+% \end{equation}
+% The result of equation \eqref{eq:levicivita-sigmas} implies that the product $\vec{\sigma_i} \vec{\sigma_j}$ is anti-commutative due to the presence of the totally anti-symmetric Levi-Civita symbol, and therefore 
+% $$ \vec{\sigma_i} \vec{\sigma_j} - \vec{\sigma_i} \vec{\sigma_j} = 2 \vec{\sigma_i} \vec{\sigma_j}. $$
+% This leads to the cross product being defined in terms of the commutator relation
+% \begin{align*}
+%     \vec{\sigma_i} \cross \vec{\sigma_j} &=  \epsilon_{ijk} \vec{\sigma_k} \\
+%                             &=  - \vec{\sigma_i} \vec{\sigma_j} I \\
+%                             &= - \frac{1}{2} \left ( \vec{\sigma_i} \vec{\sigma_j} - \vec{\sigma_j} \vec{\sigma_i}  \right) I
+% \end{align*}
+% \begin{equation}
+%     \boxed{\vec{\sigma_i} \cross \vec{\sigma_j} =  - \comm{\vec{\sigma_i}}{\vec{\sigma_j}} \ I},
+% \end{equation}
+% where the commutator is defined by $ \comm{\vec{\sigma_i}}{\vec{\sigma_j}} \equiv \frac{1}{2} \left ( \vec{\sigma_i} \vec{\sigma_j} - \vec{\sigma_j} \vec{\sigma_i}  \right) $. Additionally, this anti-commutative property corroborates our result for the inner product, since 
+% $$ \vec{\sigma_i} \vec{\sigma_j} + \vec{\sigma_i} \vec{\sigma_j} = 0, $$
+% while
+% $$ \vec{\sigma_i} \vec{\sigma_i} + \vec{\sigma_i} \vec{\sigma_i} = 2. $$
+% The inner product can now be redefined in terms of geometric products as
+% \begin{equation}
+%     \boxed{\vec{\sigma_i} \cdot \vec{\sigma_j} =  \frac{1}{2} \left ( \vec{\sigma_i} \vec{\sigma_j} + \vec{\sigma_i} \vec{\sigma_j}  \right)} 
+% \end{equation}
+% We can also use this anti-commutative property to show that the pesudoscalar squares to $-1$:
+% \begin{equation}
+%     I^2 = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3}\vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3}= \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_3}\vec{\sigma_3}\vec{\sigma_1} \vec{\sigma_2}  = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2}  = -1
+% \end{equation}
+% This result alludes to the hidden complex structure within the geometric algebra of spacetime, and is another reason why the pesudoscalar behaves like the imaginary unit, $i$. Finally, we can use this and equation \eqref{eq:geomprod-sigmaij}, which reads $ - \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j}  \gamma_k  = \epsilon_{ijk} I $, to write 
+% \begin{align*}
+%     - \vec{\gamma_i} \vec{\gamma_j} \vec{\sigma_k}  &= \epsilon_{ijk} I  \\
+%     - \vec{\gamma_i} \vec{\gamma_j} \vec{\sigma_k}  I &= \epsilon_{ijk} I^2 \\
+%     \vec{\sigma_k}  I &= \vec{\gamma_j} \vec{\gamma_i}\epsilon_{ijk} 
+% \end{align*}
+% or,
+% \begin
+% {equation}
+%     I \vec{\sigma_k} =  - \epsilon_{ijk}   \vec{\gamma_i}\vec{\gamma_j} =  \epsilon_{ijk}   \sigma_i \vec{\sigma_j} .
+% \end{equation}
+% This last result showcases the dual relationship between the bivector elements of this subalgebra. Since the geometric product can be broken down as 
+% $$ \sigma_i \vec{\sigma_j} = \sigma_i \cdot  \vec{\sigma_j} + \sigma_i \wedge \vec{\sigma_j} \,$$
+% we can write
+% \begin{align*}
+%      \sigma_i \vec{\sigma_j} &=  \sigma_i \wedge \vec{\sigma_j} \\
+%      - \sigma_i \vec{\sigma_j}  I &= -  \sigma_i \wedge \vec{\sigma_j}  I,
+% \end{align*}
+% or,
+% \begin{equation}
+%     \boxed{ \sigma_i \wedge \vec{\sigma_j} = \sigma_i \cross \vec{\sigma_j} \ I. }
+% \end{equation}
+% We therefore obtain the familiar dual relationship between the cross and outer products. \\
+
+% At this point, in addition to duality, we have derived the two fundamental mathematical operations of the familiar 3D space, found within this subalgebra. The inner product reducing to a delta function implies we are dealing with a mutually orthogonal set. Thus we have all the mathematical structure needed for dealing with 3D space, all encapsulated within the spacetime algebra and we refer to this subalgebra as the Even Subalgebra.
+
+
+% \subsection{Spacetime Bivectors}
+
+
+% The minus sign hints at a relationship that requires the Levi-Civita tensor, as with all the other spaces (2D and 3D Euclidean space) explored thus far. We shall derive the exact relationship later on. For now, consider the geometric product of two bivectors. Given our generators, we can only have combinations of products of $\{\vec{\gamma_i}\vec{\gamma_0}\}$ and $\{\vec{\gamma_i}\vec{\gamma_j}\},$ and thus are limited to certain grades for our bivector product. 
+% \begin{enumerate}
+%     \item Grade 0 (Scalar):
+
+%     When we have products of $\{\vec{\gamma_i}\vec{\gamma_0}\}$ or $\{\vec{\gamma_i}\vec{\gamma_j}\}$, the result must be a scalar. 
+%         \SubItem{Products of $\{\vec{\gamma_i}\vec{\gamma_0}\}$}
+%             $$ \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_i}\vec{\gamma_0} = - \vec{\gamma_i}\vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_0} = 1$$
+    
+%         \SubItem{Products of $\{\vec{\gamma_i}\vec{\gamma_j}\}$}
+%             $$ \vec{\gamma_i}\vec{\gamma_j} \vec{\gamma_i}\vec{\gamma_j} = - \vec{\gamma_i}\vec{\gamma_i}\vec{\gamma_j} \vec{\gamma_j} = -1$$
+            
+%     \item Grade 2 (Bivector):
+
+%     When we have products of $\{\vec{\gamma_i}\vec{\gamma_j}\}$ with $\{\vec{\gamma_j} \gamma_k\}$ or $\{\vec{\gamma_i}\vec{\gamma_0}\}$ with $\{\vec{\gamma_i}\vec{\gamma_j}\}$, the result must be a bivector.
+
+%         \SubItem{Products of $\{\vec{\gamma_i}\vec{\gamma_j}\}$  with $\{\vec{\gamma_j} \gamma_k\}$}:
+%             $$ \vec{\gamma_i}\vec{\gamma_j} \vec{\gamma_j} \gamma_k = - \vec{\gamma_i}\gamma_k $$    
+            
+%         \SubItem{Products of $\{\vec{\gamma_i}\vec{\gamma_0}\} $ with $\{\vec{\gamma_i}\vec{\gamma_j}\}$}:
+%             $$ \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_i}\vec{\gamma_j} = - \vec{\gamma_i}\vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j} = \vec{\gamma_0} \vec{\gamma_j} $$    
+            
+%     \item Grade 4 (Pseudoscalar):
+
+%     When we take products of $\{\vec{\gamma_i}\vec{\gamma_0}\}$ with $\{\vec{\gamma_j} \gamma_k\}$.
+%     \begin{equation}
+%         \label{eq:21}
+%         \vec{\gamma_i}\vec{\gamma_0} \vec{\gamma_j} \gamma_k = -  \epsilon_{ijk} I.    
+%     \end{equation}
+    
+% \end{enumerate}
+% That last result might not be immediately obvious, although it is clear that the product will be of grade 4 and therefore must be a signature multiple of the pesudoscalar. Notice that if we are dealing with general bivectors constructed from $\sigma_i = \vec{\gamma_i}\vec{\gamma_0}$, they cannot have grade-4 elements. We shall focus on such bivectors for now and derive the aforementioned result of equation \eqref{eq:21} in the next section.
+
+% \subsection{The Inner Product}
+
+% If you're familiar with matrices, you might have heard that vectors are column matrices while co-vectors are row matrices. Well, think of the co-vector $\vec{u}$ that maps $\vec{v} = \vec{e}_3$ to $\vec{0}$:
+
+% \[
+% \begin{bmatrix}
+%     u_1 && u_2 && u_3
+% \end{bmatrix}
+% \begin{bmatrix}
+%     0 \\
+%     0 \\
+%     1
+% \end{bmatrix}
+% =
+% 0.
+% \]
+% I'm sure you agree that a row matrix multiplied with a column matrix gives us a scalar. Infact, this is the familiar dot product! So this equation amounts to the question: what vector is perpindicular to $\vec{e}_3$? And if you don't immediatly see that, we can simply crunch through the linear algebra to see that this corresponds to the plane $\vec{\vec{e_3}} = 0$, scaled by some factor $u_3$
+% $$u_3 \vec{\vec{e_3} } = 0 $$
+%  All vectors in this plane are perpindicular to $\vec{\vec{e_3}}$. 
+
+%  As a last remark before I end this section, it is worth noting that this duality results further generalizes to the case of a non-orthogonal basis. The basis need not even be normalized, and, in that case, one replaces $\textbf{I} \textbf{I}^{\dagger}$ with $\textbf{E} \textbf{E}^{-1}$, where $\mathbf{E} \equiv \epsilon \mathbf{I}$ encapsulates $\mathbf{I}$, in its usual definition but where the basis vectors do not necessarily anti-commute. The scalar $\epsilon$ is then the product of all the lengths of the basis vectors. Finally, the inverse, $\mathbf{E}^{-1}$, is similar to a reversion but scaled down by that factor, $\epsilon$, such that $\textbf{E} \textbf{E}^{-1} = 1$. The proof is more rigorous 
+
+% one can see that this would reduce to the special case I was discussing where $\mathbf{E}^{-1} = \mathbf{I}^\dagger$.
+
+% % Simply replace $\textbf{I} \textbf{I}^\dagger$ with $\textbf{I} \textbf{I}^{-1}$, where 
+% % \begin{equation} \label{eq:inverse_pseudoscalar}
+% %      \textbf{I}^{-1} \equiv \frac{\textbf{I}^\dagger }{ \textbf{I}^\dagger \textbf{I} }.
+% % \end{equation}
+
+
+
+% Let us try to find $\vec{\gamma^2}$ using the procedure from section \ref{sec:duality}, equation \eqref{eq:dual_generator}, noting the result of the inner product.
+% \begin{align*}
+%     \vec{\gamma^2} &= (-1)^{2 - 1} \vec{\gamma_0} \wedge \vec{\gamma_1} \wedge \vec{\gamma_3} (\textbf{I}^\dagger) \\
+%     \vec{\gamma^2} &= - \vec{\gamma_0} \vec{\gamma_1} \color{teal} \vec{\gamma_3}  (\vec{\gamma_3} \color{black} \vec{\gamma_2} \vec{\gamma_1} \vec{\gamma_0})  \\
+%     \vec{\gamma^2} &= - \vec{\gamma_0} \vec{\gamma_1} \vec{\gamma_2} \vec{\gamma_1} \vec{\gamma_0}  \\
+%     \vec{\gamma^2} &=  \vec{\gamma_0} \vec{\gamma_2} \color{teal} \vec{\gamma_1} \vec{\gamma_1} \color{black} \vec{\gamma_0}  \\
+%     \vec{\gamma^2} &=  -\vec{\gamma_2} \color{teal} \vec{\gamma_0}  \color{black} \vec{\gamma_0},
+% \end{align*}
+% or
+% $$\boxed{\vec{\gamma^2} =  -\vec{\gamma_2} }$$
+
+
+
+
+
+\end{document}
+

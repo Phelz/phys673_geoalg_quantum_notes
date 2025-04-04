@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[73] biber:340> INFO - === Thu Apr  3, 2025, 20:36:47
+[84] Biber.pm:418> INFO - Reading 'main.bcf'
+[137] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
+[149] Biber.pm:4383> INFO - Processing section 0
+[158] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[159] bibtex.pm:1713> INFO - LaTeX decoding ...
+[163] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[203] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[203] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[203] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[203] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[207] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[208] bbl.pm:757> INFO - Output to main.bbl
+[208] Biber.pm:130> WARN - ISBN '978-0-521-48022-2 978-0-521-71595-9 978-0-511-80749-7' in entry 'doran_geometric_2003' is invalid - run biber with '--validate_datamodel' for details.
+[209] Biber.pm:132> INFO - WARNINGS: 1

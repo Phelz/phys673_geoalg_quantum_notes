@@ -10,7 +10,7 @@ where I have used Einstein summation notation, since
 \begin{align*}
     \vec{A} &= \sum_i a_i \vec{ \vec{e_i} }, \ &\ \vec{B} &= \sum_j b_j\vec{ \vec{e_j} }.
 \end{align*}
-You might have previously seen equation \ref{eq:cross_product_levi_cevita}. If not, I intentionally leave it to the reader to see that it matches the linear algebra definition computationally. The nominal definition of the Levi-Cevita is described only in terms of cyclic and anti-cyclic permutations of $1, 2, 3$:
+You might have previously seen equation \ref{eq:cross_product_levi_cevita}. If not, I intentionally leave it to the reader to see that it computationally matches the linear algebra definition. The nominal definition of the Levi-Cevita is described in terms of cyclic and anti-cyclic permutations of $1, 2, 3$:
 \begin{equation}
     \label{eq:levicivita_nominal_def}
     \epsilon_{ijk} = 
@@ -25,44 +25,43 @@ The appearance of the Levi-Cevita in equation \ref{eq:cross_product_levi_cevita}
     \label{eq:cross_product_basis_vectors}
      \vec{\vec{e_i}} \cross \vec{\vec{e_j}} = \epsilon_{ijk} \vec{\vec{e_k}} .
 \end{equation}
-I shall intentionally refrain from commenting about the appearance of the Levi-Cevita in equation \ref{eq:cross_product_levi_cevita} (and by extension \ref{eq:cross_product_basis_vectors}). Indeed, this appearance is no coincidence, with deep geometrical implications. However, I shall not give away the entire answer here. Rather, I plan to entice the reader(s) to explore the answer for themselves. In the following, I shall give some of the necessary ingredients. A full geometric treatment of Levi-Cevita, however, requires a lecture of its own. In that spirit, I shall quote the GA definition of Levi-Cevita [REFERENCE HERE!!!!!] without proof:
+I shall intentionally refrain from commenting about the geometrical interpretation of the Levi-Cevita in equation \ref{eq:cross_product_levi_cevita} (and by extension \ref{eq:cross_product_basis_vectors}). Indeed, this appearance is no coincidence, with deep geometrical implications. However, I shall not give away the entire answer here. Rather, I plan to entice the reader(s) to explore the answer for themselves. In the following, I shall give some of the necessary ingredients. A full geometric treatment of Levi-Cevita, however, requires a lecture of its own. In that spirit, I shall only quote and verify the GA definition of Levi-Cevita (\cite{doran_geometric_2003}):
 \begin{equation}
     \label{eq:levicivita_ga_def}
     \epsilon_{ijk} = \vec{\vec{e_i}} \wedge \vec{\vec{e_j}} \wedge \vec{\vec{e_k}} \mathbb{I}^\dagger,
 \end{equation}
-where $\mathbb{I}^\dagger = \vec{\vec{e_3}} \wedge \vec{\vec{e_2}} \wedge \vec{\vec{e_1}} = \vec{\vec{e_3}} \ \vec{\vec{e_2}}  \ \vec{\vec{e_1}}  $, the reverse of equation \ref{eq:pseudoscalar_wedge_definition}.
-We can verify that this definition is valid, by comparing with the more familiar definition, where
+where $\mathbb{I}^\dagger = \vec{\vec{e_3}} \wedge \vec{\vec{e_2}} \wedge \vec{\vec{e_1}} = \vec{\vec{e_3}} \ \vec{\vec{e_2}}  \ \vec{\vec{e_1}}  $, the reverse of equation \ref{eq:pseudoscalar_wedge_definition}. To demonstrate the simplicity of the algebra, we can verify that this definition is valid by comparing with the more familiar definition.
 \begin{enumerate}
-    \item For the case where any two indices repeat:
+    \item For the case where any two indices repeat, for  example:
     $$ \epsilon_{112} = \vec{e_1} \wedge \vec{e_1} \wedge \vec{e_2} \mathbb{I}^\dagger $$
-    where, $\vec{e_1} \wedge \vec{e_1} = 0$, yielding $ \epsilon_{112} = 0 $. This result generalizes, since $ \vec{e_i} \wedge \vec{e_i} = 0$:
+    the term $\vec{e_1} \wedge \vec{e_1} = 0$, yields $ \epsilon_{112} = 0 $. This result generalizes, since $ \vec{e_i} \wedge \vec{e_i} = 0$:
     $$ \epsilon_{iij} =  \vec{e_i} \wedge \vec{e_i}  \wedge \vec{e_j} \mathbb{I}^\dagger = 0.$$
 
-    \item For cyclic permutations:
+    \item For cyclic permutations, e.g.,
     $$ \epsilon_{123} = \vec{e_1} \wedge \vec{e_2} \wedge \vec{e_3} \mathbb{I}^\dagger = \vec{e_1} \vec{e_2} \color{teal} \vec{e_3} \vec{e_3} \color{black}\vec{e_2} \vec{e_1} = 1, $$
     since $ \vec{e_i} \vec{e_i} = \vec{e_i} \cdot \vec{e_i} = 1$, and we see that the reversion of the pseudoscalar, $\mathbb{I}$, leads to the cyclic property of the Levi-Civita tensor.
 
-    \item As for anti-cyclic permutations, our orthogonal basis set ensures anti-commutation:
+    \item And for anti-cyclic permutations, our orthogonal basis set ensures anti-commutation:
     \begin{align*}
         \epsilon_{132} &= \vec{e_1} \wedge \vec{e_3} \wedge \vec{e_2} \vec{e_3} \vec{e_2} \vec{e_1} \\
         &= \vec{e_1} \vec{e_3} \vec{e_2} \vec{e_3} \vec{e_2} \vec{e_1} \\
         &= - \vec{e_1} \vec{e_2} \color{teal}\vec{e_3} \vec{e_3} \color{black} \vec{e_2} \vec{e_1} \\
         &= - \epsilon_{123} = -1,
     \end{align*}
-    which ensures that the Levi-Civita is completely anti-symmetric under the swapping of any two indices.
+    ensuring that the Levi-Civita is completely anti-symmetric under the swapping of any two indices.
     
 \end{enumerate}
 Therefore, we recover the definition of equation \eqref{eq:levicivita_nominal_def} using that of equation \eqref{eq:levicivita_ga_def}.
 
 \subsection{The Outer Product}
-We shall return to the cross product shortly. For now, I would like to make a correspondence between the two. So let us compute the outer product of $\vec{A} $ and $\vec{B} $, which can be simply expanded--all you need to know is associativity can distributivity:
+I shall return to the cross product shortly. For now, let us get more familiar with GA computations. I would like to highlight that all one needs to know here is associativity and distributivity--no matrix manipulations. To demonstrate, let us compute the outer product of $\vec{A} $ and $\vec{B} $, which can be simply expanded via
 \begin{align*}
     \vec{A} \wedge \vec{B}  &= (a_1 \vec{e_1} + a_2 \vec{e_2} + a_3 \vec{e_3}) \wedge (b_1 \vec{e_1} + b_2 \vec{e_2} + b_3 \vec{e_3}) \\
                 &= a_1 \vec{e_1} \wedge b_1 \vec{e_1} + a_1 \vec{e_1} \wedge b_2 \vec{e_2} + a_1 \vec{e_1} \wedge b_3 \vec{e_3} \\
                 &+ a_2 \vec{e_2} \wedge b_1 \vec{e_1} + a_2 \vec{e_2} \wedge b_2 \vec{e_2} + a_2 \vec{e_2} \wedge b_3 \vec{e_3} \\
                 &+ a_3 \vec{e_3} \wedge b_1 \vec{e_1} + a_3 \vec{e_3} \wedge b_2 \vec{e_2} + a_3 \vec{e_3} \wedge b_3 \vec{e_3}.
 \end{align*}
-Notice that terms where two parallel bases are wedged vanish ($\vec{e_i} \wedge \vec{e_i} = 0$), and we are left with parts that are totally anti-symmetric. Thus the outer product reads
+Notice that terms where two parallel bases vectors are wedged vanish ($\vec{e_i} \wedge \vec{e_i} = 0$), and we are left with parts that are totally anti-symmetric. Thus the outer product reads
 \begin{align*}
     \vec{A}  \wedge \vec{B}   &= (a_1 b_2 - a_2 b_1) \ \vec{e_1} \wedge \vec{e_2} \\
                 &+ (a_2 b_3 - a_3 b_2) \ \vec{e_2} \wedge \vec{e_3} \\
@@ -72,12 +71,12 @@ Focusing for now on the first term $ (a_1 b_2 - a_2 b_1) \ \vec{e_1} \wedge \vec
 \begin{align*}
     \vec{e_1} \wedge \vec{e_2} = \vec{e_1} \vec{e_2} \vec{e_3} \vec{e_3} =  \vec{e_3} \vec{e_1} \vec{e_2} \vec{e_3},
 \end{align*}
-and we can utilize the fact that $\epsilon_{123} = 1$ along with equation \eqref{eq:cross_product_basis_vectors} to write:
+where I have implanted $\vec{e_3} \vec{e_3} = 1$ to the right. I then swapped $\vec{e_3}$ to the left twice, picking up a minus sign each time since $\vec{e_i} \vec{e_j} = \vec{e_i} \ \wedge \ \vec{e_j} = - \vec{e_j} \ \wedge \ \vec{e_i} = - \vec{e_j} \vec{e_i}$. Now I shall utilize the fact that $\epsilon_{123} = 1$ along with equation \eqref{eq:cross_product_basis_vectors} to write:
 \begin{align*}
     \vec{e_1} \wedge \vec{e_2} &= \epsilon_{123} \vec{e_3} \vec{e_1} \vec{e_2} \vec{e_3} \\
                     &= \vec{e_1} \cross \vec{e_2} \mathbb{I}.
 \end{align*}
-We can use this to rewrite the wedge product as 
+We can use this result but to rewrite all the outer products as 
 \begin{align*}
     \vec{A}  \wedge \vec{B}   &= (a_1 b_2 - a_2 b_1) \  (\vec{e_1} \cross \vec{e_2}) \mathbb{I} \\
                 &+ (a_2 b_3 - a_3 b_2) \  (\vec{e_2} \cross \vec{e_3}) \mathbb{I} \\
@@ -89,11 +88,25 @@ or,
                 &+ (a_2 b_3 - a_3 b_2) \  (-\vec{e_2}) \mathbb{I} \\
                 &+ (a_1 b_3 - a_3 b_1 ) \ (\vec{e_1}) \mathbb{I}.
 \end{align*}
-Here, we see the cross product makes an appearance! First, notice that the minus sign that was given by the determinant of the matrix defining the cross product is now built into this algebra. If you are reading this, this is a hint of something deeper! Second, the outer product can now be expressed in a compact form
+Here, we see the cross product makes an appearance! These scalar numbers are exactly the components of the cross product. Also, notice the minus sign next to $\vec{e_2}$, which would have been given by the determinant of the matrix defining the cross product. It might be of value to trace exactly where that minus sign comes from in our mathematics so far. Suffices to say, the Levi-Cevita is the culprit.
+\\ \\ 
+Rewriting our result, the outer product can now be expressed in a compact form
 \begin{equation}
     \label{eq:cross_product_outer_product}
-    \large\boxed{\vec{A}  \wedge \vec{B}  = (\vec{A}  \cross \vec{B} ) \mathbb{I}}
+    \large\boxed{\vec{A}  \wedge \vec{B}  = (\vec{A}  \cross \vec{B} ) \mathbb{I}}.
 \end{equation}
+Equation \eqref{eq:cross_product_outer_product} makes the definition of the cross product abundantly clear. Both the orientation and the magnitude of the cross product are given by the outer product, as shown in Figure \ref{fig:cross_product_revisited}. Unlike the cross product, however, the outer product generalizes to higher dimensions, while the cross product only exists in 3D space.
+\\ \\
+Before concluding this section, I would like to point out that in equation \eqref{eq:cross_product_outer_product}, the pseudoscalar, $\mathbb{I}$, seems to relate the oriented parallelogram, $\vec{A} \wedge \vec{B}$, to an orthogonal vector, $\vec{A} \cross \vec{B}$. Let us invesitgate whether this action of the pseudoscalar generalizes.
+
+% Add figure
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/cross_product_revisited.png}
+    \caption{The cross product of two vectors $\vec{A}$, shown in red, and $\vec{B}$, shown in blue, is a vector perpendicular to the parallelogram spanned by the two vectors, namely, $\vec{A} \wedge \vec{B}$. The orientation is simply given by the outer product, as shown with the curved yellow arrow. Curling our hands in this orientation results in the vector $\vec{A} \cross \vec{B}$, shown in yellow.}
+    \label{fig:cross_product_revisited}
+\end{figure}
+
 
 
 \subsection{Duality} \label{sec:duality}
@@ -119,7 +132,7 @@ or,
 \begin{equation} \label{eq:dual_3d_test_2}
 \large\boxed{\vec{e_1} = \vec{e_2} \mathbb{I}^\dagger}.
 \end{equation}
-Woah! Ignoring the miraculous, very suspicious $\mathbb{I^2} = -1$ for a second, I tackle the more immediate task at hand: does this orthogonality by mere multiplication with the pseudoscalar, $\mathbb{I}$, generalize to higher dimensions? Well, it has to! Let us say, for some reason, we want to pick out an element of the space that is perpendicular to all other elements, then we certainly can. Here is how we do it. We can construct from our space a vector $\vec{e^j}$ perpendicular to all vectors $\vec{e_i}$ where $i \neq j$,
+This result is interesting to say the least. Ignoring the miraculous, very suspicious, $\mathbb{I}^2 = -1$, I tackle the more immediate task at hand: does this orthogonality by mere multiplication with the pseudoscalar, $\mathbb{I}$, generalize to higher dimensions? Well, it has to. Let us say we want to pick out an element of the space that is perpendicular to all other elements, then we certainly can. Here is how we do it. We can construct from our space a vector $\vec{e^j}$ perpendicular to all vectors $\vec{e_i}$ where $i \neq j$,
 \begin{equation} \label{eq:duality_definition}
     \large\boxed{\vec{e_i} \cdot \vec{e^j} = \delta_i^j},
 \end{equation}
@@ -132,11 +145,17 @@ for some $n$-dimensional space, spanned by $\vec{e_n}$. Then we can find $\vec{e
     \label{eq:dual_generator}
     \vec{e^j} = (-1)^{j-1} \vec{e_1} \wedge \vec{e_2} \wedge ... \hat{e}_j \wedge ... e_{n} \mathbb{I}^\dagger,
 \end{equation}
-where $\hat{e}_j$ in equation \eqref{eq:dual_generator} just implies that term is missing from the product. I shall ignore the $(-1)^{j-1}$ term for now--sufices to say it is related to the handedness of our set. 
+where $\hat{e}_j$ in equation \eqref{eq:dual_generator} just implies that term is missing from the product. The appearance of the $(-1)^{j-1}$ term should not come as a surprise, given our definition of the Levi-Civita in equation \eqref{eq:levicivita_ga_def}, and because we are now missing a term. Ignoring it for now, let us focus on the remainder of equation \eqref{eq:dual_generator}. 
 \\ \\ 
-For now let us consider what equation \eqref{eq:dual_generator} tells us. It says, to find a vector $\vec{e^j}$ perpendicular to all other basis elements, you first wedge all those elements to construct a hypervolume, but one which does NOT include the original vector $\vec{e_j}$. \footnote{Notice the subscript vs. superscript notation used to denote the difference between a vector vs. covector, respectively. Fancy names do not mean much, but we need some nomenclature to differentiate between the two.} After wedging all the elements, you multiply with the reversed pseudoscalar, $\mathbb{I}^\dagger$, (similar to what we did above) to pick out an element perpendicular to all those wedged elements. 
-\\ \\
-Let us see if this works. As an example, consider $\vec{e_2}$, but now in 3D space:
+Let us consider what equation \eqref{eq:dual_generator} tells us. It says, to find a vector $\vec{e^j}$ perpendicular to all other basis elements, you first wedge all those elements to construct a hypervolume, but one which does NOT include the original vector $\vec{e_j}$.\footnote{Notice the subscript vs. superscript notation used to denote the difference between a vector vs. covector, respectively. Fancy names do not mean much, but we need some nomenclature to differentiate between the two.} After wedging all the elements, you multiply with the reversed pseudoscalar, $\mathbb{I}^\dagger$, like we did in equation \eqref{eq:dual_3d_test_2} to pick out an element perpendicular to all those wedged elements. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth, height=6cm]{figures/dual_viz_2.png}
+    \caption{We expect the action of the pseudoscalar to take $\vec{e_2}$ and spit out a vector perpendicular to the other basis elements, namely, $\vec{e_1}$ and $\vec{e_3}$, for $\mathbb{R}^3$.  }
+    \label{fig:dual}
+\end{figure}
+
+As an example, consider $\vec{e_2}$, but now in 3D space. For our procedure to work, we must consider the elements of the algebra orthogonal to $\vec{e_2}$, namely $\vec{e_1}$ and $\vec{e_3}$, and multiply them with the pseudoscalar. The result should be an element orthogonal to both $\vec{e_1}$ and $\vec{e_3}$, as shown in Figure \ref{fig:dual}. Let us test this algebraicly:
 \begin{align*}
     \vec{e_2} \cdot \vec{e^2} &= \vec{e_2} \cdot ((-1)^1 \vec{e_1} \wedge \vec{e_3} \mathbb{I}^\dagger ) \\
                     &= \vec{e_2} \cdot (-\vec{e_1} \vec{e_3} \mathbb{I}^\dagger )\\
@@ -144,8 +163,8 @@ Let us see if this works. As an example, consider $\vec{e_2}$, but now in 3D spa
                     &= \vec{e_2} \cdot (\vec{e_2} \mathbb{I} \mathbb{I}^\dagger)\\
                     &= \vec{e_2} \cdot \vec{e_2} = 1.
 \end{align*}
-where $\mathbb{I} \mathbb{I}^\dagger = \vec{e_1} \vec{e_2} \color{teal} \vec{e_3} \vec{e_3} \color{black} \vec{e_2} \vec{e_1} = 1$. Now, one might argue that this result is redundant. We tried to look for an element much like $\vec{e_2}$ in the space, in the sense that it is perpendicular to $\vec{e_1}$ and $\vec{e_3}$. However, we ended up right back at $\vec{e_2}$. However, although this result implies that 
+where $\mathbb{I} \mathbb{I}^\dagger = \vec{e_1} \vec{e_2} \color{teal} \vec{e_3} \vec{e_3} \color{black} \vec{e_2} \vec{e_1} = 1$. Now, one might argue that this result is redundant. We tried to look for an element much like $\vec{e_2}$ in the space, in the sense that it is perpendicular to $\vec{e_1}$ and $\vec{e_3}$. However, we ended up right back at $\vec{e_2}$. Although this result implies that 
 \begin{equation*}
     \vec{e_i} = \vec{e^i},
 \end{equation*} 
-one cannot take that to be the case for all vector spaces. As we shall see in the next section, the metric of the space dictates the rules that relate a vector to its covector--or, put in more familiar terms, a vector to its dual. Now the term "dual" is no longer mysterious and has a grounded, geometrical meaning.
+one cannot take that to be the case for all vector spaces. As we shall see in the next section, the metric of the space dictates the rules that relate a vector to its covector, or, a vector to its dual. Now the term "dual" is no longer mysterious and has a grounded, geometrical meaning.

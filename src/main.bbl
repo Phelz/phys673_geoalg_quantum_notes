@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{doran_geometric_2003}{book}{}
+      \name{author}{2}{}{%
+        {{hash=85acd282be40d1408f002ac66c321e80}{%
+           family={Doran},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3d6a44a7c9dc85a209077335498afa1b}{%
+           family={Lasenby},
+           familyi={L\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \strng{fullhash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \strng{bibnamehash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \strng{authorbibnamehash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \strng{authornamehash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \strng{authorfullhash}{49f8a225e9ad32c83a7240913bb2f4ac}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Geometric algebra is a powerful mathematical language with applications across a range of subjects in physics and engineering. This book is a complete guide to the current state of the subject with early chapters providing a self-contained introduction to geometric algebra. Topics covered include new techniques for handling rotations in arbitrary dimensions, and the links between rotations, bivectors and the structure of the Lie groups. Following chapters extend the concept of a complex analytic function theory to arbitrary dimensions, with applications in quantum theory and electromagnetism. Later chapters cover advanced topics such as non-Euclidean geometry, quantum entanglement, and gauge theories. Applications such as black holes and cosmic strings are also explored. It can be used as a graduate text for courses on the physical applications of geometric algebra and is also suitable for researchers working in the fields of relativity and quantum theory.}
+      \field{edition}{1}
+      \field{isbn}{978-0-521-48022-2 978-0-521-71595-9 978-0-511-80749-7}
+      \field{month}{5}
+      \field{title}{Geometric {Algebra} for {Physicists}}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1017/CBO9780511807497
+      \endverb
+      \verb{file}
+      \verb PDF:files/1559/Doran and Lasenby - 2003 - Geometric Algebra for Physicists.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/9780511807497/type/book
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/9780511807497/type/book
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

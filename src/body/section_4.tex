@@ -2,7 +2,7 @@
 \section{An Algebra within an Algebra}
 
 \subsection{Spacetime Geometric Algebra}
-In the last section, I introduced the idea of duality, and said that it is not always the case that the basis vector and their duals are identical--a somewhat redundant result. To illustrate that this is not always the case, let us consider a slightly more sophisticated algebra, the Spacetime Geometric Algebra (SGA), which inherits the 4D Minkowski metric from special relativity. I assume the reader is already familiar with that tensor. I will be using the mostly negative version, the one with the signature: $(+, -, -, -)$.
+In the last section, I introduced the idea of duality, and said that it is not always the case that the basis vector and their duals are identical--a redundant result. To illustrate, let us consider a slightly more sophisticated algebra, the Spacetime Geometric Algebra (SGA), which inherits the 4D Minkowski metric from special relativity. I assume the reader is already familiar with that tensor. I will be using the mostly negative version, the one with the signature: $(+, -, -, -)$.
 \\ \\ 
 The orthonormal basis of SGA consists of one timelike vector $\gamma_0$ and three spacelike vectors $\gamma_1$, $\gamma_2$, and $\gamma_3$. Like with normal Euclidean space, the basis vectors follow two important rules. The first identifies orthogonality:
 \begin{equation}
@@ -12,14 +12,22 @@ while the second, and most important, dictates the operation of the inner produc
 \begin{equation} \label{eq:metric_dot_product}
     \large\boxed{\vec{\gamma_\alpha}\vec{\gamma_\alpha} = \vec{\gamma_\alpha} \cdot \vec{\gamma_\alpha} = \large{ \eta_{\alpha\alpha}}},
 \end{equation} 
-since the outer product $\vec{\gamma_\alpha} \wedge \vec{\gamma_\alpha}$ vanishes. I cannot overstress how fundamental equation \eqref{eq:metric_dot_product} is. The metric defines the structure of the geometry. By defining the norm, it also implicitly defines the rules of dual transformations--the reason as to why, I shall leave to the reader. As for how, consider the spacelike basis vector resembling $\hat{y}$, namely $\vec{\gamma_2}$, and its norm: \footnote{By norm, I refer to the inner product; length would be the square root of that.}
+since the outer product $\vec{\gamma_\alpha} \wedge \vec{\gamma_\alpha}$ vanishes. I cannot overstress how fundamental equation \eqref{eq:metric_dot_product} is. The metric defines the structure of the geometry. By defining the norm, it also implicitly defines the rules of dual transformations. To demonstrate, consider the spacelike basis vector resembling $\hat{y}$, namely $\vec{\gamma_2}$, and its norm:\footnote{By norm, I refer to the inner product; length would be the square root of that.}
 \begin{equation} \label{eq:dot_product_gamma_2}
 \vec{\gamma_2} \cdot \vec{\gamma_2} = \eta_{22} = -1.
 \end{equation}
-Because of equation \eqref{eq:duality_definition}, which defines duality, and equation \eqref{eq:dot_product_gamma_2} above, we must have that:
-$$    \vec{\gamma_2} \cdot \vec{\gamma^2} = 1 \Longrightarrow \vec{\gamma_2} \cdot (-\vec{\gamma_2} )= - \vec{\gamma_2} \cdot \vec{\gamma_2} =  -(-1) = 1, $$
-meaning,
+Because of equation \eqref{eq:duality_definition}, which defines duality, and equation \eqref{eq:dot_product_gamma_2} above, we must have
+\begin{equation} \label{eq:duality_gamma_2}
+    \vec{\gamma_2} \cdot \vec{\gamma^2} = 1.
+\end{equation}
+For both equations \eqref{eq:dot_product_gamma_2} and \eqref{eq:duality_gamma_2} to hold, $\gamma_2$ cannot be equal to its dual. Instead, we must have 
 \begin{equation}
+    \vec{\gamma^2} = - \vec{\gamma_2},
+\end{equation}
+so that 
+$$ \vec{\gamma_2} \cdot (-\vec{\gamma_2} )= - \vec{\gamma_2} \cdot \vec{\gamma_2} =  -(-1) = 1, $$
+meaning,
+\begin{equation} 
     \large\boxed{\vec{\gamma_i} = - \vec{\gamma^i}}. 
 \end{equation}
 But that only holds for $i \in \{ 1, 2,3\}$. For the timelike vector, 
@@ -38,14 +46,14 @@ Therefore, the inner product, defined by the metric tensor, sets the rules of th
 
 
 \subsection{The Even Subalgebra}
-The last section should have been indicative of the complexity of SGA, given its metric. Another aspect of this intricacy arises when we consider the amount of grade-2 elements we can generate using our basis set $\{ \vec{\gamma_0}, \vec{\gamma_2}, \vec{\gamma_1}, \vec{\gamma_3} \}$. Considering that scalars form via the products $\vec{\gamma_0} \vec{\gamma_0} = 1$ and $\vec{\gamma_i}\vec{\gamma_i}= -1 $, the only generators for bivectors are 
+The last section should have been indicative of the complexity of SGA, given its metric, in how it defines duality. Another aspect of the intricacy of SGA arises when we consider the amount of grade-2 elements we can generate using our basis set $\{ \vec{\gamma_0}, \vec{\gamma_2}, \vec{\gamma_1}, \vec{\gamma_3} \}$. Considering that scalars form via the products $\vec{\gamma_0} \vec{\gamma_0} = 1$ and $\vec{\gamma_i}\vec{\gamma_i}= -1 $, the only generators for bivectors are 
 \begin{table}[H]
 \centering
 \begin{tabular}{ccccc}
 $\{\vec{\gamma_i}\vec{\gamma_0}\}$ & and & $\{\vec{\gamma_i} \vec{\gamma_j}\},$ 
 \end{tabular}
 \end{table}
-each of which generates 3 independent bivectors (given their anti-commutativity), for a total of 6 bivectors in our spacetime geom{etric algebra. I would like to focus on the bivector algebra formed by the set $ \{ \vec{\sigma_i} \} \equiv \{\vec{\gamma_i}\vec{\gamma_0}\}$, from which you can generate scalars via
+where $i,j \in \{ 1,2,3\}$ signifies the use of a spacelike basis vector. Each of these generators produces 3 independent bivectors (given their anti-commutativity), for a total of 6 bivectors in our spacetime geometric algebra. I would like to focus on the bivector algebra formed by the set $ \{ \vec{\sigma_i} \} \equiv \{\vec{\gamma_i}\vec{\gamma_0}\}$, from which you can generate scalars via
 \begin{equation} \label{eq:pauli_unitary}
     (\vec{\sigma_i})^2 = \vec{\sigma_i} \vec{\sigma_i}  =  \vec{\gamma_i} \vec{\gamma_0} \vec{\gamma_i} \vec{\gamma_0} = - \vec{\gamma_i} \vec{\gamma_i}  \color{teal} \vec{\gamma_0} \vec{\gamma_0} \color{black} = 1,
 \end{equation}
@@ -88,4 +96,4 @@ Since the product of any of the $\vec{\sigma_i} \vec{\sigma_j} $ reduces to $1$ 
 \begin{equation}
     \large \boxed{ \vec{\sigma_i} \vec{\sigma_j} = \delta_{ij} +  \epsilon_{ijk} \mathbb{I} \vec{\sigma_k}  }.
 \end{equation}
-Looks familiar?... Indeed, this is the algebra Pauli introduced to describe quantum spin! However, I would like us to pause here and ponder a little, since, up to this point, I had made no mention of quantum mechanics, nor did I introduce any physics, observables, measurements, etc. We arrived here purely via the geometric algebra of spacetime. Does this mean quantum spin is inextricably linked to geometry? While, I cannot fully answer this question, nor did I find anyone to claim they can in the literature, I can certainly start to pierce the veil--show you a glimpse of the geometry of quantum spin. 
+Looks familiar?... Indeed, this is the algebra Pauli introduced to describe quantum spin! \cite{havel_bloch-sphere-type_2004} However, I would like us to pause here and ponder a little, since, up to this point, I had made no mention of quantum mechanics, nor did I introduce any physics, observables, measurements, etc. We arrived here purely via the geometric algebra of spacetime. Does this mean quantum spin is inextricably linked to geometry? Let us hold this thought for a moment and explore what we can do with the Pauli algebra--now, the subalgebra of SGA.

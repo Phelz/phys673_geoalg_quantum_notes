@@ -97,12 +97,12 @@ Rewriting our result, the outer product can now be expressed in a compact form
 \end{equation}
 Equation \eqref{eq:cross_product_outer_product} makes the definition of the cross product abundantly clear. Both the orientation and the magnitude of the cross product are given by the outer product, as shown in Figure \ref{fig:cross_product_revisited}. Unlike the cross product, however, the outer product generalizes to higher dimensions, while the cross product only exists in 3D space.
 \\ \\
-Before concluding this section, I would like to point out that in equation \eqref{eq:cross_product_outer_product}, the pseudoscalar, $\mathbb{I}$, seems to relate the oriented parallelogram, $\vec{A} \wedge \vec{B}$, to an orthogonal vector, $\vec{A} \cross \vec{B}$. Let us invesitgate whether this action of the pseudoscalar generalizes.
+Before concluding this section, I would like to point out that in equation \eqref{eq:cross_product_outer_product}, the pseudoscalar, $\mathbb{I}$, seems to relate the oriented parallelogram, $\vec{A} \wedge \vec{B}$, to an orthogonal vector, $\vec{A} \cross \vec{B}$. Let us invesitgate whether this action of the pseudoscalar generalizes\footnote{If you are curious, indeed, the name "pseudoscalar" stems from the fact that it has odd parity.}.
 
 % Add figure
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/cross_product_revisited.png}
+    \includegraphics[width=0.95\textwidth]{figures/cross_product_revisited.png}
     \caption{The cross product of two vectors $\vec{A}$, shown in red, and $\vec{B}$, shown in blue, is a vector perpendicular to the parallelogram spanned by the two vectors, namely, $\vec{A} \wedge \vec{B}$. The orientation is simply given by the outer product, as shown with the curved yellow arrow. Curling our hands in this orientation results in the vector $\vec{A} \cross \vec{B}$, shown in yellow.}
     \label{fig:cross_product_revisited}
 \end{figure}
@@ -116,10 +116,10 @@ But what is perpendicular to $\vec{e_2}$?
 \begin{align*}
 \vec{e_2} &= \vec{e_1}  \ \mathbb{I} \\
 \vec{e_2} \mathbb{I} &= \vec{e_1}  \ \mathbb{I} \mathbb{I} \\
-\vec{e_2} \mathbb{I} &= \vec{e_1}  \ (\mathbb{I})^2=  \vec{e_1}  \ (\vec{e_1} \vec{e_2} \vec{e_3})^2 \\
-\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ (\vec{e_1} \vec{e_2} \vec{e_3} \vec{e_1} \vec{e_2} \vec{e_3} )\\
-\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ (\vec{e_2} \vec{e_3} \color{teal}{\vec{e_1} \vec{e_1}} \color{black} \vec{e_2} \vec{e_3} )\\
-\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ (-  \vec{e_3} \color{teal}{\vec{e_2} \vec{e_2}} \color{black} \vec{e_3} )
+\vec{e_2} \mathbb{I} &= \vec{e_1}  \ (\mathbb{I})^2=  \vec{e_1}  \ (\vec{e_1} \vec{e_2} )^2 \\
+\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ (\vec{e_1} \vec{e_2}  \vec{e_1} \vec{e_2}  )\\
+\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ ( - \vec{e_2}  \color{teal}{\vec{e_1} \vec{e_1}} \color{black} \vec{e_2}  )\\
+\vec{e_2} \mathbb{I} &=  \vec{e_1}  \ (-   \color{teal}{\vec{e_2} \vec{e_2}} \color{black}  )
 \end{align*}
 \begin{equation} \label{eq:dual_3d_test_1}
 \large\boxed{\vec{e_2} \mathbb{I} =  -\vec{e_1}}
@@ -132,7 +132,7 @@ or,
 \begin{equation} \label{eq:dual_3d_test_2}
 \large\boxed{\vec{e_1} = \vec{e_2} \mathbb{I}^\dagger}.
 \end{equation}
-This result is interesting to say the least. Ignoring the miraculous, very suspicious, $\mathbb{I}^2 = -1$, I tackle the more immediate task at hand: does this orthogonality by mere multiplication with the pseudoscalar, $\mathbb{I}$, generalize to higher dimensions? Well, it has to. Let us say we want to pick out an element of the space that is perpendicular to all other elements, then we certainly can. Here is how we do it. We can construct from our space a vector $\vec{e^j}$ perpendicular to all vectors $\vec{e_i}$ where $i \neq j$,
+This result is interesting to say the least. Ignoring the miraculous, very suspicious, $\mathbb{I}^2 = -1$, I tackle the more immediate task at hand: does this orthogonality by mere multiplication with the pseudoscalar, $\mathbb{I}$, generalize to higher dimensions? Well, it has to. Let us say we want to pick out an element of the space that is perpendicular to all other elements, then we certainly can. Here is how we do it. We can construct from our space a vector $\vec{e^j}$ (called covector)\footnote{Notice the subscript vs. superscript notation used to denote the difference between a vector vs. covector, respectively. Fancy names do not mean much, but we need some nomenclature to differentiate between the two.} perpendicular to all vectors $\vec{e_i}$ where $i \neq j$,
 \begin{equation} \label{eq:duality_definition}
     \large\boxed{\vec{e_i} \cdot \vec{e^j} = \delta_i^j},
 \end{equation}
@@ -147,7 +147,7 @@ for some $n$-dimensional space, spanned by $\vec{e_n}$. Then we can find $\vec{e
 \end{equation}
 where $\hat{e}_j$ in equation \eqref{eq:dual_generator} just implies that term is missing from the product. The appearance of the $(-1)^{j-1}$ term should not come as a surprise, given our definition of the Levi-Civita in equation \eqref{eq:levicivita_ga_def}, and because we are now missing a term. Ignoring it for now, let us focus on the remainder of equation \eqref{eq:dual_generator}. 
 \\ \\ 
-Let us consider what equation \eqref{eq:dual_generator} tells us. It says, to find a vector $\vec{e^j}$ perpendicular to all other basis elements, you first wedge all those elements to construct a hypervolume, but one which does NOT include the original vector $\vec{e_j}$.\footnote{Notice the subscript vs. superscript notation used to denote the difference between a vector vs. covector, respectively. Fancy names do not mean much, but we need some nomenclature to differentiate between the two.} After wedging all the elements, you multiply with the reversed pseudoscalar, $\mathbb{I}^\dagger$, like we did in equation \eqref{eq:dual_3d_test_2} to pick out an element perpendicular to all those wedged elements. 
+Let us consider what equation \eqref{eq:dual_generator} tells us. It says, to find a vector $\vec{e^j}$ perpendicular to all other basis elements, you first wedge all those elements to construct a hypervolume, but one which does NOT include the original vector $\vec{e_j}$. After wedging all the elements, you multiply with the reversed pseudoscalar, $\mathbb{I}^\dagger$, like we did in equation \eqref{eq:dual_3d_test_2} to pick out an element perpendicular to all those wedged elements. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth, height=6cm]{figures/dual_viz_2.png}

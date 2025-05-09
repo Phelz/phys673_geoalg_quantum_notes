@@ -67,6 +67,188 @@
       \verb https://www.cambridge.org/core/product/identifier/9780511807497/type/book
       \endverb
     \endentry
+    \entry{dressel_spacetime_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=565380e088bbadc6ef09ee23d96ea09d}{%
+           family={Dressel},
+           familyi={D\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bba0727b66e54623c67aded98332003a}{%
+           family={Bliokh},
+           familyi={B\bibinitperiod},
+           given={Konstantin\bibnamedelima Y.},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=2cfaf55a849299a0fe647e070cffada8}{%
+           family={Nori},
+           familyi={N\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \strng{fullhash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \strng{bibnamehash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \strng{authorbibnamehash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \strng{authornamehash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \strng{authorfullhash}{bcc0cc824a1183fc8ddde8a992cf1405}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a comprehensive introduction to spacetime algebra that emphasizes its practicality and power as a tool for the study of electromagnetism. We carefully develop this natural (Clifford) algebra of the Minkowski spacetime geometry, with a particular focus on its intrinsic (and often overlooked) complex structure. Notably, the scalar imaginary that appears throughout the electromagnetic theory properly corresponds to the unit 4-volume of spacetime itself, and thus has physical meaning. The electric and magnetic fields are combined into a single complex and frame-independent bivector field, which generalizes the Riemann-Silberstein complex vector that has recently resurfaced in studies of the single photon wavefunction. The complex structure of spacetime also underpins the emergence of electromagnetic waves, circular polarizations, the normal variables for canonical quantization, the distinction between electric and magnetic charge, complex spinor representations of Lorentz transformations, and the dual (electric-magnetic field exchange) symmetry that produces helicity conservation in vacuum fields. This latter symmetry manifests as an arbitrary global phase of the complex field, motivating the use of a complex vector potential, along with an associated transverse and gauge-invariant bivector potential, as well as complex (bivector and scalar) Hertz potentials. Our detailed treatment aims to encourage the use of spacetime algebra as a readily available and mature extension to existing vector calculus and tensor methods that can greatly simplify the analysis of fundamentally relativistic objects like the electromagnetic field.}
+      \field{issn}{03701573}
+      \field{journaltitle}{Physics Reports}
+      \field{month}{8}
+      \field{note}{arXiv:1411.5002 [physics]}
+      \field{title}{Spacetime algebra as a powerful tool for electromagnetism}
+      \field{urlday}{25}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{589}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 71}
+      \range{pages}{71}
+      \verb{doi}
+      \verb 10.1016/j.physrep.2015.06.001
+      \endverb
+      \verb{file}
+      \verb PDF:files/1509/Dressel et al. - 2015 - Spacetime algebra as a powerful tool for electromagnetism.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1411.5002
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1411.5002
+      \endverb
+      \keyw{Mathematical Physics,Mathematics - Mathematical Physics,Physics - Optics,Quantum Physics}
+    \endentry
+    \entry{havel_bloch-sphere-type_2004}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c237e825cb664bb999912327b9ba1b9d}{%
+           family={Havel},
+           familyi={H\bibinitperiod},
+           given={Timothy\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4b2591f16679b765b46a0c3d8c304a92}{%
+           family={Doran},
+           familyi={D\bibinitperiod},
+           given={Chris\bibnamedelimb J.\bibnamedelimi L.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5064e93a243144c026aa4cac85c250c5}
+      \strng{fullhash}{5064e93a243144c026aa4cac85c250c5}
+      \strng{bibnamehash}{5064e93a243144c026aa4cac85c250c5}
+      \strng{authorbibnamehash}{5064e93a243144c026aa4cac85c250c5}
+      \strng{authornamehash}{5064e93a243144c026aa4cac85c250c5}
+      \strng{authorfullhash}{5064e93a243144c026aa4cac85c250c5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Geometric algebra is a mathematical structure that is inherent in any metric vector space, and defined by the requirement that the metric tensor is given by the scalar part of the product of vectors. It provides a natural framework in which to represent the classical groups as subgroups of rotation groups, and similarly their Lie algebras. In this article we show how the geometric algebra of a six-dimensional real Euclidean vector space naturally allows one to construct the special unitary group on a two-qubit (quantum bit) Hilbert space, in a fashion similar to that used in the well-established Bloch sphere model for a single qubit. This is then used to illustrate the Cartan decompositions and subalgebras of the four-dimensional special unitary group, which have recently been used by J. Zhang, J. Vala, S. Sastry and K. B. Whaley [Phys. Rev. A 67, 042313, 2003] to study the entangling capabilities of two-qubit unitaries.}
+      \field{month}{8}
+      \field{note}{arXiv:quant-ph/0403136}
+      \field{title}{A {Bloch}-{Sphere}-{Type} {Model} for {Two} {Qubits} in the {Geometric} {Algebra} of a 6-{D} {Euclidean} {Vector} {Space}}
+      \field{urlday}{26}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{pages}{93}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/12.540929
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:files/1555/Havel and Doran - 2004 - A Bloch-Sphere-Type Model for Two Qubits in the Geometric Algebra of a 6-D Euclidean Vector Space.pdf:application/pdf;Snapshot:files/1556/0403136.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/quant-ph/0403136
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/quant-ph/0403136
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{penrose_fashion_2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f51dfd339a12125d0f82a2d93e66d9b7}{%
+           family={Penrose},
+           familyi={P\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Princeton, New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{fullhash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{bibnamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authorbibnamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authornamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authorfullhash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"What can fashionable ideas, blind faith, or pure fantasy possibly have to do with the scientific quest to understand the universe? Surely, theoretical physicists are immune to mere trends, dogmatic beliefs, or flights of fancy? In fact, acclaimed physicist and best-selling author Roger Penrose argues that researchers working at the extreme frontiers of physics are just as susceptible to these forces as anyone else. In this provocative book, he argues that fashion, faith, and fantasy, while sometimes productive and even essential in physics, may be leading today's researchers astray in three of the field's most important areas--string theory, quantum mechanics, and cosmology ... The result is an important critique of some of the most significant developments in physics today from one of its most eminent figures."--Jacket}
+      \field{isbn}{978-0-691-11979-3 978-0-691-17853-0}
+      \field{note}{OCLC: ocn958086779}
+      \field{title}{Fashion, faith, and fantasy in the new physics of the universe}
+      \field{year}{2016}
+      \verb{file}
+      \verb Penrose, Roger - Fashion, faith and fantasy in the new physics of the universe-Princenton University Press (2017):files/390/Penrose, Roger - Fashion, faith and fantasy in the new physics of the universe-Princenton University Press (2017).pdf:application/pdf
+      \endverb
+      \keyw{notion,Cosmologie,Cosmology,Modèles des cordes vibrantes (physique nucléaire),Philosophy,Physics,Quantum theory,Social aspects,String models,Théorie quantique}
+    \endentry
+    \entry{penrose_road_2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f51dfd339a12125d0f82a2d93e66d9b7}{%
+           family={Penrose},
+           familyi={P\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Jonathan Cape}%
+      }
+      \strng{namehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{fullhash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{bibnamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authorbibnamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authornamehash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \strng{authorfullhash}{f51dfd339a12125d0f82a2d93e66d9b7}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-224-04447-9}
+      \field{shorttitle}{The road to reality}
+      \field{title}{The road to reality: a complete guide to the laws of the universe}
+      \field{year}{2004}
+      \verb{file}
+      \verb PDF:files/387/Penrose - 2004 - The road to reality a complete guide to the laws of the universe.pdf:application/pdf
+      \endverb
+      \keyw{notion,Mathematical physics,Physical laws}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

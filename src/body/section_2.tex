@@ -17,6 +17,10 @@ I assume here that the reader is familiar with scalars and vectors. In GA, we ca
 \end{equation}
 for any two vectors $\vec{u}$ and $\vec{v}$. This anti-symmetry is important and I shall be employing it frequently in the future.
 \\ \\
+In quantum mechanics, you would encounter the outer product when forming an operator via, e.g.,
+$$ \ket{u} \bra{v} .$$
+Now, however, you can think of the outer product as a geometric operation that produces a bivector.
+\\ \\
 As an aside, one could construct even higher grade objects, oriented volumes or hypervolumes, called trivectors and multivectors, respectively. However, I shall not need more than to show, without rigour, how these objects come about, namely via successive applications of the outer product. For instance, taking the outer product of the  orthonormal basis $\{ \vec{\vec{e_i}} \} \vee i \in \{ 1, 2,3\} $, corresponding to $ \{ \hat{i}, \hat{j}, \hat{k} \}$:
 \begin{equation} \label{eq:pseudoscalar_wedge_definition}
    \vec{\vec{e_1}} \wedge \vec{\vec{e_2}} \wedge \vec{\vec{e_3}} \ = \mathbb{I}  
@@ -24,6 +28,7 @@ As an aside, one could construct even higher grade objects, oriented volumes or 
 yields the cube of unit volume in 3D space shown in Figure \ref{fig:trivector}, where $\mathbb{I}$ is called the \textbf{pseudoscalar}--a very important quantity we shall encounter time and again in our discussions of GA.
 \\ \\
 Now you have a geometric idea of the outer product--no more a mysterious or purely algebraic operation. The outer product is a grade-raising operation, as we saw in the examples for bivectors and trivectors. For multivectors, you can imagine more of the same.
+
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.8\textwidth, height=8cm]{figures/trivector.png}

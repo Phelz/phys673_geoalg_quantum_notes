@@ -15,9 +15,7 @@ Instead of going through the math, I would like to remind the reader of the fund
 \begin{equation} \label{eq:imaginary_pseudoscalar}
 	\mathbb{I}  \mathbb{I} = \mathbb{I} ^2 = -1,
 \end{equation}
-which I swept under rug right momentarily. This result alludes to a hidden complex structure embedded within GA. Equation \eqref{eq:imaginary_pseudoscalar} holds not only for the pseudoscalar of 3D space which was used in deriving equation \eqref{eq:dual_3d_test_1}, but also for the 4D Minkowski space (as one quickly check), and, by extension, for the even subalgebra. This result is precisely why GA
-\\ \\
-Additionally, I have shown in the previous section that the Pauli vectors are unitary (see equation \eqref{eq:pauli_unitary}). Hence, we have all the ingredients necessary to assert that if equation \eqref{eq:euler_quantum} holds equation \eqref{eq:euler_ga} must also hold.
+which I swept under rug right momentarily. This result alludes to a hidden complex structure embedded within SGA, since the pseudoscalar is algebraiclly equivialent to the imaginary unit within our even subalgebra \cite{dressel_spacetime_2015}. Additionally, I have shown in the previous section that the Pauli vectors are unitary (see equation \eqref{eq:pauli_unitary}). Hence, we have all the ingredients necessary to assert that if equation \eqref{eq:euler_quantum} holds equation \eqref{eq:euler_ga} must also hold.
 \\ \\
 Finally, using equation \eqref{eq:pauli_product}, I would like to rewrite  $\mathbb{I} \vec{\sigma_3}$.
 $$ \vec{\sigma_i} \vec{\sigma_j} = \epsilon_{ijk} \mathbb{I} \vec{\sigma_k} = \epsilon_{ij3} \mathbb{I} \vec{\sigma_3},$$
@@ -33,32 +31,6 @@ Here, I would like to examine the sandwich product
 	\exp{ \mathbb{I} \vec{\sigma_3} \theta / 2},
 \end{equation}
 for some vector $\vec{v}$ in our subalgebra. To illustrate, let us use $\vec{v} =  \vec{\sigma_1}$:
-% \begin{align*}
-% 	\exp{ -\mathbb{I} \vec{\sigma_3} \theta / 2} \ \vec{\sigma_1}  \
-% 	\exp{ \mathbb{I} \vec{\sigma_3} \theta / 2} & = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
-% 	                                            & = \left(  \vec{\sigma_1} \cos(\frac{\theta}{2}) + \vec{\sigma_2}  \sin(\frac{\theta}{2}) \right) \left(  \cos(\frac{\theta}{2}) + \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
-% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})  + \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) + \color{teal}\vec{\sigma_1} \vec{\sigma_1} \color{black} \vec{\sigma_2} \cos(\frac{\theta}{2})  \sin(\frac{\theta}{2}) + \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \sin(\frac{\theta}{2}) \\
-% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})+ \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) + \vec{\sigma_2} \cos(\frac{\theta}{2})  \sin(\frac{\theta}{2}) - \color{teal} \vec{\sigma_2} \vec{\sigma_2} \color{black} \vec{\sigma_1} \sin[2](\frac{\theta}{2})   \\
-% 	                                            & =  \vec{\sigma_1} \cos[2](\frac{\theta}{2})+ 2 \vec{\sigma_2}  \sin(\frac{\theta}{2}) \cos(\frac{\theta}{2}) - \vec{\sigma_1} \sin[2](\frac{\theta}{2})
-% \end{align*}
-% \begin{align*}
-% 	\exp{ -\mathbb{I} \vec{\sigma_3} \theta / 2} \ \vec{\sigma_1}  \
-% 	\exp{ \mathbb{I} \vec{\sigma_3} \theta / 2}  = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \\
-%                                                  =   \cos(\frac{\theta}{2}) \vec{\sigma_1} \cos(\frac{\theta}{2}) 
-%                                                   - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \ \vec{\sigma_1} \cos(\frac{\theta}{2})  \\
-%                                                   &\quad + \cos(\frac{\theta}{2}) \vec{\sigma_1}  \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) 
-%                                                   -  \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2})  \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \\
-%                                                   % --------------------
-%                                                  =  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
-%                                                   - \vec{\sigma_1} \vec{\sigma_2}  \ \vec{\sigma_1} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})  \\
-%                                                   &\quad + \color{teal} \vec{\sigma_1}  \vec{\sigma_1}  \color{black} \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
-%                                                   -  \vec  {\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2}    \sin[2](\frac{\theta}{2}) \\
-%                                                   % --------------------
-%                                                  =  \vec{\sigma_1}   \cos[2](\frac{\theta}{2}) 
-%                                                   + \vec{\sigma_2} \color{teal} \vec{\sigma_1}  \ \vec{\sigma_1} \color{black} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})  \\
-%                                                   &\quad + \vec{\sigma_2} \sin(\frac{\theta}{2})  \cos(\frac{\theta}{2})
-%                                                   -  (\vec  {\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2})    \sin[2](\frac{\theta}{2}) \\
-% \end{align*}
 
 $$ 	\exp{ -\mathbb{I} \vec{\sigma_3} \theta / 2} \ \vec{\sigma_1}  \
 \exp{ \mathbb{I} \vec{\sigma_3} \theta / 2}  = \left(  \cos(\frac{\theta}{2}) - \vec{\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) \vec{\sigma_1} \left(  \cos(\frac{\theta}{2}) + \vec  {\sigma_1} \vec{\sigma_2} \sin(\frac{\theta}{2}) \right) $$
@@ -85,15 +57,15 @@ $$ 	\exp{ -\mathbb{I} \vec{\sigma_3} \theta / 2} \ \vec{\sigma_1}  \
 or,
 \begin{equation} \label{eq:sigma_x_rotated}
      \large \exp{ -\mathbb{I} \vec{\sigma_3} \theta / 2} \ \vec{\sigma_1}  \
-     \exp{ \mathbb{I} \vec{\sigma_z} \theta / 2} =  \vec{\sigma_1} \cos(\theta) + \vec{\sigma_2} \sin(\theta),
+     \exp{ \mathbb{I} \vec{\sigma_3} \theta / 2} =  \vec{\sigma_1} \cos(\theta) + \vec{\sigma_2} \sin(\theta),
 \end{equation}
-where, in the last step, I made use of the half-angle trigonometric identities and that $ (\vec{\sigma_1} \vec{\sigma_2} )^2 = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2} = - \vec{\sigma_1} \color{teal} \vec{\sigma_2} \vec{\sigma_2} \color{black} \vec{\sigma_1} = -1 $, again, behaving like the imaginary unit. The latter is no coincidence. In fact, the Pauli algebra is isomorphic to the algebra of quaternions, where 
+where, in the last step, I made use of the half-angle trigonometric identities and that $ (\vec{\sigma_1} \vec{\sigma_2} )^2 = \vec{\sigma_1} \vec{\sigma_2} \vec{\sigma_1} \vec{\sigma_2} = - \vec{\sigma_1} \color{teal} \vec{\sigma_2} \vec{\sigma_2} \color{black} \vec{\sigma_1} = -1 $, again, behaving like the imaginary unit. The latter is no coincidence. In fact, the Pauli algebra is isomorphic to the algebra of quaternions \cite{dressel_spacetime_2015}, where 
 \begin{align*}
     \vec{\sigma_1} \mathbb{I} &\sim i &
     -\vec{\sigma_2} \mathbb{I} & \sim j &
     \vec{\sigma_3} \mathbb{I} &\sim k.
 \end{align*}    
-Hence, the quaternion algebra, fundamentally related to spatial rotations, is also a subalgebra of the SGA, and the imaginary unit $i$ is represented by the bivector $\vec{\sigma_1} \vec{\sigma_2}$. Equation \eqref{eq:sigma_x_rotated} describes a rotation of the vector $\vec{\sigma_1}$ about the $\vec{\sigma_3}$ axis by an angle $\theta$. Now we can visualize the rotation as being brought about by the action of the exponential of the bivector $\vec{\sigma_1} \vec{\sigma_2}$, which is a rotation in the plane defined by the two vectors $\vec{\sigma_1}$ and $\vec{\sigma_2}$. The sense of rotation would then be opposite if we use the bivector $\vec{\sigma_2} \vec{\sigma_1} =-  \vec{\sigma_1} \vec{\sigma_2}$, a purely geometric intuition! 
+Hence, the quaternion algebra, fundamentally related to spatial rotations, is also a subalgebra of the SGA, and the imaginary unit, $i$, is represented by the bivector $\vec{\sigma_1} \vec{\sigma_2}$. Equation \eqref{eq:sigma_x_rotated} describes a rotation of the vector $\vec{\sigma_1}$ about the $\vec{\sigma_3}$ axis by an angle $\theta$. Now we can visualize the rotation as being brought about by the action of the exponential of the bivector $\vec{\sigma_1} \vec{\sigma_2}$, which is a rotation in the plane defined by the two vectors $\vec{\sigma_1}$ and $\vec{\sigma_2}$. The sense of rotation would then be opposite if we use the bivector $\vec{\sigma_2} \vec{\sigma_1} =-  \vec{\sigma_1} \vec{\sigma_2}$, a purely geometric intuition! 
 \\ \\ 
 It is because of this anti-commutativity that we can write 
 \begin{equation} \label{eq:rotor_form}
@@ -107,7 +79,7 @@ since a swap (or reversion, denoted by the dagger) of $\vec{\sigma}_1$ and $\vec
 $$ R_{\vec{\sigma_3}} \left( \frac{\pi}{4} \right) \ \vec{\sigma_1}  \ R_{\vec{\sigma_3}} \left(  \frac{\pi}{4} \right)^\dagger =  \vec{\sigma_2}. $$
 Substituting $\theta = \pi/4$ gives
 $$ R_{\vec{\sigma_3}} \left( \frac{\pi}{2} \right) \ \vec{\sigma_1}  \ R_{\vec{\sigma_3}} \left(  \frac{\pi}{2} \right)^\dagger =  \frac{1}{\sqrt{2}} \left( \vec{\sigma_1} + \vec{\sigma_2} \right). $$
-Indeed, we are moving around the unit circle in the plane defined by $\vec{\sigma_1}$ and $\vec{\sigma_2}$! Thus, using these rotations, we can move around the unit sphere, commonly referred to as see Figure \ref{fig:riemann_sphere}. No surprise, this unit sphere corresponds with the famous Bloch sphere, popularized by Bloch in Nuclear Magnetic Resonance, or the Poincaré sphere, more appropriate in the context of quantum optics, used to describe the polarization of light. However, this mathematical entity should be rightly attributed to Riemann, who first introduced it in the context of complex geometry. In the next section, I shall explore how this sphere relates to the mathematical description of the qubit.
+Indeed, we are moving around the unit circle in the plane defined by $\vec{\sigma_1}$ and $\vec{\sigma_2}$! Thus, using these rotations, we can move around the unit sphere, as shown in Figure \ref{fig:riemann_sphere}. No surprise, this unit sphere corresponds with the famous Bloch sphere, popularized by Bloch in Nuclear Magnetic Resonance, or the Poincaré sphere, more appropriate in the context of quantum optics, used to describe the polarization of light. However, this mathematical entity should be rightly attributed to Riemann, who first introduced it in the context of complex geometry. The correspondence between this sphere and the our quantum representation of a spin-1/2 system is much more subtle than a simple mapping using the spherical coordinates $\theta$ and $\phi$. In the next section, I shall explore how this sphere relates to the mathematical description of the qubit.
 
 \begin{figure}[H]
    \centering
@@ -117,7 +89,6 @@ Indeed, we are moving around the unit circle in the plane defined by $\vec{\sigm
 \end{figure}
 
 
-\subsection{The Riemann Sphere}
 
 \subsection{The Qubit}
 
@@ -133,8 +104,74 @@ This allows us to scale the state by $\frac{1}{v}$ such that
 \begin{equation} \label{eq:qubit_state_normalized}
     \frac{1}{v} \ket{\nearrow} = \ket{\uparrow} + u \ket{\downarrow},
 \end{equation}
-where $u = \frac{w}{v}$. 
+where $u = \frac{w}{v}$. This scaling, however, introduces another problem, which occurs when $v=0$. To avoid this, we must allow ourselves to map $u$ to infinity when $v=0$ \cite{penrose_fashion_2016}. In kleeping with the theme of this lecture, I want to explore exactly what it means to include this \textit{"point at infinity"}. More importantly, what sort of space would our qubit inhabit if we allow for such a point?\footnote{A note on normalization: we would have to map the point at infinity with $\ket{\downarrow}$ and thus its anti-podal point $\frac{1}{\infty}$ with $\ket{\uparrow}$ in this treatment. See \cite{penrose_fashion_2016} for a more detailed discussion.} 
+\\ \\
+To answer the previous questions, I would like to first point out that the idea of a point at infinity is not too strange. In fact, it is a common idea in projective geometry, where we can think of the points on the sphere as being projected onto a plane. To approach this concept from a different angle, imagine you are standing at the origin of the xy plane and looking at the function $f(x) = x^2 + 1$. If looking straight ahead from the origin, from your prespective, $f(x)$ would seem to look like an ellipse, as shown in Figure \ref{fig:proj_geometry}! Far away in the distance, you would see the function touching the y-axis. To make this concept more concrete, let us invesitgate a space called the Real Projective Line, $\mathbb{PR}^1$. 
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=1\textwidth]{figures/proj_geometry.png}
+   \caption{The function $f(x) = x^2 + 1$ (a) as seen in the xy plane, and (b) as seen from the prespective of an observer at the origin, looking into the distance.}
+   \label{fig:proj_geometry}
+\end{figure}
+
+\subsection{The Real Projective Line}
+
+An example of a projective space is the real projective line, $\mathbb{PR}^1$. To imagine this space, think of an artist drawing what he sees in front of him. As shown in Figure \ref{fig:artist}, all the artist needs to do is project the blue dots onto the painting (the line of the easel), to give a prespective drawing. We can extend this idea by thinking no longer of an artist but a special camera, also at the origin, that can capture light in all directions. The camera would then project not only objects beyond the screen, but also objects between the camera and the screen as well as objects behind the camera, as shown in Figure \ref{fig:camera}. 
 
 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=1\textwidth]{figures/artist_easel.png}
+   \caption{The artist maps the blue circles to the red circles by drawing a line to the himself (the origin), and finding the intersection with the easel, shown in yellow.}
+   \label{fig:artist}
+\end{figure}
 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=1\textwidth]{figures/special_camera.png}
+   \caption{Same as Figure \ref{fig:artist}, but now the artist is replaced by a special camera that can capture light in all directions. The camera additionally projects objects behind the screen, as well as objects between the camera and the screen.}
+   \label{fig:camera}
+\end{figure}
 
+\newpage
+
+The mechanics of this projection are simple. To project any point to the screen, one simply follows the line that connects the point to the origin, and finds the intersection with the screen.
+This corresponds to a scaling the point by a specific factor, $\lambda$, which is different for every point. For instance, to intersect the screen at $y=1$, the point at, say $(x,y) = (4.0, 2.0)$, would need to be scaled by $\lambda = \frac{1}{2}$, but the point at $(-1.0, -0.5)$ would need to be scaled by $\lambda = -2$; see Figure \ref{fig:real_projective_line_scaling}. However, since these points are on the same line which passes through the origin, they both map to the same point in the projective space. This occurs because any line through the origin has the equation
+\begin{equation} \label{eq:line_through_origin}
+    y = m x,
+\end{equation}
+where $m$ is the slope of the line. Thus, scaling both $x$ and $y$ by the same factor $\lambda$ does not change the ratio $\frac{y}{x}$, and hence the slope $m$ completely defines the projected point. This result is in direct analogy with our quantum state, where the ratio $\frac{w}{v}$ completely defines the state. 
+\\ \\
+I would like to make one final point regarding the line through the origin, $y=0$. Upon approaching this line, we see that the projected point would be very far away. In fact, at $y=0$, the projection would be at "infinity". Even more surprising is what happens when we go past the $y=0$ line. The projected point would appear to come back from said point at "infinity", as illustrated in Figure \ref{fig:real_projective_line_inf}. Now we have a geometrical meaning of what this "point at infinity" means for our space.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.85\textwidth, height=7cm]{figures/real_proj_line_sacling.png}
+   \caption{Projecting a point to the screen is equivialent to scaling the point by a factor, shown in yellow for points $(x,y) = (4.0, 2.0)$ and $(-1.0, -0.5)$. The scaling factor is different for each point, but the projected point is the same, since both points are on the same line through the origin.}
+   \label{fig:real_projective_line_scaling}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth, height=19cm]{figures/real_proj_line_inf.png}
+    \caption{The projected point (a) goes very far away to the left as we approach the line $y=0$, and (b) is mapped to a "point at infinity" when we cross the line $y=0$. (c) The projected point appears to come back from the "point at infinity".}
+    \label{fig:real_projective_line_inf}
+\end{figure}
+
+\newpage
+
+One final issue remains for us to make a correspondence between the qubit and our projective space. In our previous discussion, we showed that the qubit can be described by a ratio, much like in the real projective line. However, for the qubit, the ratio, $u = \frac{w}{v}$, is a complex number, which requires two real parameters. To address this issue, we can extend the projective line to the real projective plane $\mathbb{PR}^2$. Now, instead of one screen we have many, each corresponding with a line through the origin, as shown in Figure \ref{fig:real_projective_plane}, and, in total, we would have a sphere! \cite{penrose_road_2004} In this new space, any point 
+$$ (x, y, z) \in \mathbb{PR}^2 $$
+could be scaled by, say, $\lambda = \frac{1}{y}$, to give the point
+$$ \left( \frac{x}{y}, 1, \frac{z}{y} \right).$$
+Now we have two ratios to describe our space. This new space now directly corresponds with the complex projective line, $\mathbb{CP}^1$, in which our qubit lives. And this correspondence is a mapping onto a sphere--the Riemann sphere!
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/real_proj_plane_all.png}
+    \caption{The real projective plane can be thought of as an extension of the real projective line, (a) made up of many screens, each corresponding with a line through the origin, coming together to form (b) a sphere with a two planes, a screen and a plane which maps to the "point at infinity".}
+    \label{fig:real_projective_plane}
+\end{figure}
+
+\newpage

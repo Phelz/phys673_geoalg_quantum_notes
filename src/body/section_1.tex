@@ -1,17 +1,23 @@
 \section{Introduction}
 
-ADD 5 REFERENCES!!!
-
-This lecture is intended to introduce Geometric Algebra (GA). My goal is to show that the complementarity of the spin $\frac{1}{2}$ system arises not from something physical, but rather the even subalgebra, hidden within the GA of spacetime. This should be sufficient to entice the reader to ask the question: 
+This lecture is intended to break down the most fundamental mathematical operations of linear algebra used in quantum mechanics. Courses in quantum mechanics typically introduce the inner product, outer product, the Hodge duality of bras and kets (sometimes lecturers do not even discuss duality), the Levi-Civita tensor, the Pauli algebra, and even the geometry of spin, as givens, merely mathematical symbols or operations to be carried out without regard to their meaning. Even the geometry of spin, commonly referred to via the concept of the Bloch sphere (although it should be attributed to Reimann), explains the correspondence between 3D spatial rotations and the description of the qubit as if it occurs by mere coincidence. Most often, however, no explanation is provided, and the student is made to accept such notions as facts.
+\\ \\
+In this lecture, I intend to deliver a clear geometrical intuition and interpretation for all these notions within a mathematical framework much simpler than linear algebra, called Geometric Algebra (also called Clifford Algebra). Quantum optics and quantum mechanics in general, being built upon the abstract space of complex numbers—the Hilbert space, depend on the aforementioned notions. Thus, by clarifying these concepts, I provide a stronger, more based, and visual foundational mathematical framework for the calculations we carry out in varous quantum mechanics practices. 
+\subsection{Objectives}
+This lecture is intended to introduce Geometric Algebra (GA). My main objective is to show that the complementarity of the spin $\frac{1}{2}$ system arises not from something physical, but rather the geometry of spin. I will show that a subalgebra, hidden within the GA of spacetime, is isomorphic to the algebra of Pauli matrices.
+This should be sufficient to entice the reader to ask the question: 
 \\ \\
 "What is the connection between spin-1/2 systems and geometry?"
 \\ \\
-In approaching this goal, I shall dive deeper into concepts commonly overlooked in any quantum mechanics course. These include:
+My second primary goal is to elucidate the geometry of spin, giving a geometric interpretation to the sphere we nominally use to ascribe as state vector to a qubit. 
+\\ \\
+In approaching these goals, I shall dive deeper into concepts concerning vector spaces, commonly overlooked in quantum mechanics courses. These include:
 \begin{enumerate}
     \item the cross product, outer product, and their relationship to duality,
-    \item the Levi-Cevita tensor (only to hint at more fundamental relationships),
+    \item the Levi-Cevita tensor (only in terms of connections to other concepts),
     \item the inner product and its relationship to the metric tensor,
     \item the even subalgebra of spacetime and its relationship to Pauli matrices--there out called Pauli vectors,
-    \item and finally, deriving the commutator relationships of the even subalgebra, giving a brief outlook on its relationship to spin-1/2 systems.
+    \item and the commutator relationships of the even subalgebra, giving a brief outlook on its relationship to spin-1/2 systems,
+    \item and finally, the geometry of spin.
 \end{enumerate}
 
